@@ -1,16 +1,14 @@
-https://github.com/user-attachments/assets/18a614be-7410-43f1-9e62-dbc0ee036a21
+https://github.com/user-attachments/assets/8670173c-17f0-4388-85c8-47365bcf5948
 
 # برج أسيوط · icy tower Asyut
 
-**من حواري أسيوط... لفوق!**
 
 An Egyptian arcade tower climber. Build speed, leap across floors, bounce off walls and chain somersaults through four stages inspired by the streets of Assiut.
 
-**[▶ Watch the trailer](https://github.com/user-attachments/assets/18a614be-7410-43f1-9e62-dbc0ee036a21)** · **[Download for Windows](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[Game documentation](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Documentation.pdf)**
+**[▶ Watch the trailer](https://github.com/user-attachments/assets/8670173c-17f0-4388-85c8-47365bcf5948)** · **[Download for Windows](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[Game documentation](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Documentation.pdf)**
 
-> **اللي أبوه صعيدي ميخافِش!**
 
-## اجري... انط... شقلب!
+## Gameplay
 
 Keep your momentum to jump higher, skip floors to grow your combo, and watch the shisha danger meter as the camera climbs. Fall behind, restart, and try to beat your saved best score.
 
@@ -53,7 +51,7 @@ Keep your momentum to jump higher, skip floors to grow your combo, and watch the
 ## Run the project
 
 1. Clone this repository with Git LFS installed, then run `git lfs pull`.
-2. Add the project folder in Unity Hub .
+2. Add the project folder in Unity Hub.
 3. Allow Unity to restore packages and regenerate its Library folder.
 4. Open `Assets/Ma3alem/Scenes/MainMenu.unity` and press Play.
 
@@ -68,5 +66,5 @@ For the standalone version, extract the complete Windows ZIP and run `icy tower 
 - Supplied Saidi voice recordings retain their original performance, pitch and speed. Project sound effects remain in Assets/Ma3alem/Audio.
 - Lemonada and Noto fonts retain their SIL Open Font License notices under Assets/Ma3alem/Fonts and third-party resource folders.
 - RTLTMPro retains its MIT license under Assets/ThirdParty. Other bundled TMP font notices remain alongside their resources.
-- The selected local MP3 is excluded from repository source and the distributable Windows build. The private promotional trailer uses the owner-selected soundtrack; no replacement track was created. No public music-redistribution license is asserted.
+- The selected soundtrack is included with the owner’s confirmed permission to distribute it. Original supplied voice recordings are preserved.
 

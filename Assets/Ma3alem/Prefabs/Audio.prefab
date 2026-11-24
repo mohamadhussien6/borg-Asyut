@@ -341,7 +341,7 @@ MonoBehaviour:
   musicSource: {fileID: 820000}
   effectsSource: {fileID: 820001}
   voiceSource: {fileID: 820002}
-  music: {fileID: 0}
+  music: {fileID: 8300000, guid: ef4c82ebfab544d99e00e34ae817ba46, type: 3}
   jumpEffect: {fileID: 8300000, guid: d532be4f59f151d38f8cc4608929afcd, type: 3}
   landEffect: {fileID: 8300000, guid: 2e1ea0ee715a14e3a0b9f434505d9d5d, type: 3}
   clickEffect: {fileID: 8300000, guid: 9d04db80b743f507c71595f6cceb152f, type: 3}

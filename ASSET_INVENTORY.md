@@ -6,7 +6,7 @@
 - Existing plaques, logo, shisha indicator, smoke and landing effects remain in Art and UI resources.
 - Assets/Audio/VoiceLines:nine supplied speech recordings, unchanged performance.
 - Assets/Ma3alem/Audio:project sound effects. Deleted alternate music was not reintroduced.
-- Assets/LocalPreviewOnly:selected MP3 for local playback only; excluded from submission archive and build.
+- Assets/Ma3alem/Audio/Music/Selected_Music.mp3: owner-approved selected soundtrack included in the source and Windows build.
 - Lemonada/Noto font resources retain SIL OFL notices. RTLTMPro and TMP resources retain bundled license notices.
 - Scenes, prefabs, physics materials, package manifests and all .meta files retained. Older source assets remain to preserve editor/build references; generated caches and historical exported previews were removed.
 

@@ -42,7 +42,7 @@ Fonts and Arabic | Lemonada and Noto font resources with SIL Open Font License n
 
 Unity content | MainMenu and Gameplay scenes, player/platform/audio prefabs, PhysicsMaterial2D resources, Unity UI and Test Framework packages.
 
-The selected local-preview MP3 remains in the working project for local playback. In accordance with the repository packaging rule, LocalPreviewOnly is excluded from the source submission and the submitted Windows build; music references in the submission are intentionally empty. No replacement soundtrack is added. Voice lines and sound effects remain available. Font and third-party license files are retained in the source package.
+The owner-approved selected soundtrack is embedded in the Windows build and stored at Assets/Ma3alem/Audio/Music/Selected_Music.mp3. The duplicate LocalPreviewOnly directory remains excluded from source packages. No replacement soundtrack is added. Voice lines and sound effects remain available. Font and third-party license files are retained in the source package.
 
 Actual Windows gameplay capture showing the fourth-stage platform and Arabic stage introduction. Separate captures of all four stages are included in Evidence.
 
