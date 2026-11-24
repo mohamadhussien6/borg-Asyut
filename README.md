@@ -1,60 +1,59 @@
-https://github.com/user-attachments/assets/623d6707-7d06-4607-96e2-fc1375d600d2
-
-**[▶ Play the trailer](https://github.com/user-attachments/assets/623d6707-7d06-4607-96e2-fc1375d600d2)** · **[Download Windows game](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[Game documentation](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Documentation.pdf)**
+https://github.com/user-attachments/assets/18a614be-7410-43f1-9e62-dbc0ee036a21
 
 # برج أسيوط · icy tower Asyut
 
-An Egyptian 2D arcade tower climber for Windows, built with Unity6000.3.2f1.
+**من حواري أسيوط... لفوق!**
 
-**اللي أبوه صعيدي ميخافِش!**
+An Egyptian arcade tower climber. Build speed, leap across floors, bounce off walls and chain somersaults through four stages inspired by the streets of Assiut.
 
-## The game
+**[▶ Watch the trailer](https://github.com/user-attachments/assets/18a614be-7410-43f1-9e62-dbc0ee036a21)** · **[Download for Windows](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[Game documentation](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Documentation.pdf)**
 
-A Saidi character in a charcoal galabeya, white turban, shawl and balgha climbs a continuous tower framed by Egyptian residential architecture: exposed brick, worn plaster, balconies, laundry, rooftop details and hand-painted Arabic writing. The shisha-shaped danger meter warns when the camera catches up.
+> **اللي أبوه صعيدي ميخافِش!**
 
-The challenge is built around momentum rather than repeated identical jumps. Faster takeoff produces higher jumps; early release cuts jump height. Successful floor-skipping jumps build combos, while increasing camera pressure and narrower routes raise the difficulty. Falling below the camera ends the run, with a quick restart available.
+## اجري... انط... شقلب!
+
+Keep your momentum to jump higher, skip floors to grow your combo, and watch the shisha danger meter as the camera climbs. Fall behind, restart, and try to beat your saved best score.
+
+- Momentum-based running and jumps, wall rebounds and somersaults.
+- Four continuous stages with distinct platform artwork.
+- Egyptian buildings, a Saidi hero and supplied Saidi voice reactions.
+- Arabic menus, pause, help and separate sound controls.
+
+![The Egyptian neighborhood and player](Media/Screenshots/15_Egyptian_Identity.png)
+
+## From the balconies to the pharaohs
+
+| Floors | Stage | Platforms |
+|:---:|---|---|
+| 1–20 | بلكونات الحارة | Chipped balcony plaster and exposed brick |
+| 21–45 | فوق السطوح | Worn terrazzo and rooftop cement |
+| 46–75 | تحت التشطيب | Red clay brickwork and concrete |
+| 76+ | سر الفراعنة | Gold and blue pharaonic coffins |
+
+![All four stages captured in gameplay](Media/Four_Stages_Comparison.png)
 
 ## Controls
 
-| Input | Action |
+| Key | Action |
 |---|---|
-| A / D or Left / Right | Move and build momentum |
+| A / D or ← / → | Run and build momentum |
 | Space | Jump; release early for a shorter jump |
-| Escape | Pause or resume |
+| Escape | Pause / resume |
 | R after Game Over | Restart |
 | Alt + Enter | Toggle display mode |
 
-## Four continuous stages
+## Gameplay gallery
 
-| Floors | Arabic name | Platform appearance |
-|---|---|---|
-| 1–20 | بلكونات الحارة | Chipped beige balcony plaster and exposed brick |
-| 21–45 | فوق السطوح | Worn terrazzo, cement and rooftop waterproofing |
-| 46–75 | تحت التشطيب | Red clay brickwork with a thin concrete top |
-| 76+ | سر الفراعنة | Gold and blue pharaonic coffin platforms |
+| Momentum and combos | The pharaohs' secret |
+|---|---|
+| ![Combos](Media/Screenshots/09_Combo_High_Score.png) | ![Coffin platforms](Media/Screenshots/06_Stage_4.png) |
 
-Stage introductions appear for three gameplay seconds. The four art skins retain the existing platform alignment, collision dimensions, generation and difficulty settings.
-
-![The four stages in real gameplay](Media/Four_Stages_Comparison.png)
-
-## Gameplay features
-
-- Speed-based jumps, coyote time and buffered jump input.
-- Controlled wall rebounds and visual somersaults.
-- Seeded reachable platform routes with pooling.
-- Height scoring, combo bonuses and saved best scores.
-- Connected Arabic menus, pause, help and sound controls.
-- Original supplied Saidi voice reactions and separate audio controls.
-
-![Momentum and combos](Media/Screenshots/09_Combo_High_Score.png)
-![Coffin stage](Media/Screenshots/06_Stage_4.png)
-
-All 15 original 1920×1080 promotional screenshots are in [Media/Screenshots](Media/Screenshots).
+[View all 15 gameplay screenshots →](Media/Screenshots)
 
 ## Run the project
 
 1. Clone this repository with Git LFS installed, then run `git lfs pull`.
-2. Add the project folder in Unity Hub and use **Unity 6000.3.2f1**.
+2. Add the project folder in Unity Hub and use the editor version recorded in `ProjectSettings/ProjectVersion.txt`.
 3. Allow Unity to restore packages and regenerate its Library folder.
 4. Open `Assets/Ma3alem/Scenes/MainMenu.unity` and press Play.
 
