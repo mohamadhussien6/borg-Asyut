@@ -17,9 +17,9 @@ Keep your momentum to jump higher, skip floors to grow your combo, and watch the
 - Egyptian buildings, a Saidi hero and supplied Saidi voice reactions.
 - Arabic menus, pause, help and separate sound controls.
 
-![The Egyptian neighborhood and player](Media/Screenshots/15_Egyptian_Identity.png)
+[![بلكونات الحارة](Media/Screenshots/03_Stage_1.png)](Media/Screenshots/03_Stage_1.png)
 
-## From the balconies to the pharaohs
+## Stages
 
 | Floors | Stage | Platforms |
 |:---:|---|---|
@@ -28,7 +28,13 @@ Keep your momentum to jump higher, skip floors to grow your combo, and watch the
 | 46–75 | تحت التشطيب | Red clay brickwork and concrete |
 | 76+ | سر الفراعنة | Gold and blue pharaonic coffins |
 
-![All four stages captured in gameplay](Media/Four_Stages_Comparison.png)
+| فوق السطوح · 21–45 | تحت التشطيب · 46–75 |
+|:---:|:---:|
+| [![فوق السطوح](Media/Screenshots/04_Stage_2.png)](Media/Screenshots/04_Stage_2.png) | [![تحت التشطيب](Media/Screenshots/05_Stage_3.png)](Media/Screenshots/05_Stage_3.png) |
+
+**سر الفراعنة · 76+**
+
+[![سر الفراعنة](Media/Screenshots/06_Stage_4.png)](Media/Screenshots/06_Stage_4.png)
 
 ## Controls
 
@@ -40,13 +46,13 @@ Keep your momentum to jump higher, skip floors to grow your combo, and watch the
 | R after Game Over | Restart |
 | Alt + Enter | Toggle display mode |
 
-## Gameplay gallery
+## Screenshots
 
-| Momentum and combos | The pharaohs' secret |
-|---|---|
-| ![Combos](Media/Screenshots/09_Combo_High_Score.png) | ![Coffin platforms](Media/Screenshots/06_Stage_4.png) |
+| Combo | Main menu |
+|:---:|:---:|
+| [![Combo](Media/Screenshots/09_Combo_High_Score.png)](Media/Screenshots/09_Combo_High_Score.png) | [![Main menu](Media/Screenshots/01_Main_Menu.png)](Media/Screenshots/01_Main_Menu.png) |
 
-[View all 15 gameplay screenshots →](Media/Screenshots)
+[All screenshots](Media/Screenshots) · [Four-stage comparison](Media/Four_Stages_Comparison.png)
 
 ## Run the project
 
