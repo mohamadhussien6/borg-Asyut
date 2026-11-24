@@ -1,6 +1,6 @@
-[![Play the official gameplay trailer](Media/Trailer_Thumbnail.png)](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Official_Trailer.mp4)
+https://github.com/user-attachments/assets/623d6707-7d06-4607-96e2-fc1375d600d2
 
-**[▶ Play the trailer](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Official_Trailer.mp4)** · **[Download Windows game](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[Game documentation](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Documentation.pdf)**
+**[▶ Play the trailer](https://github.com/user-attachments/assets/623d6707-7d06-4607-96e2-fc1375d600d2)** · **[Download Windows game](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[Game documentation](https://github.com/mohamadhussien6/borg-asyut/releases/latest/download/Borg_Asyut_Documentation.pdf)**
 
 # برج أسيوط · icy tower Asyut
 
