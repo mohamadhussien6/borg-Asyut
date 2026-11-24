@@ -96,7 +96,7 @@ namespace Ma3alem.Tests
             for (int i = 0; i < 4; i++) widths[i] = new System.Collections.Generic.HashSet<float>();
             for (int floor = 1; floor <= 120; floor++)
             {
-                var p = route.Next(); int zone = floor >= 76 ? 3 : floor >= 46 ? 2 : floor >= 21 ? 1 : 0;
+                var p = route.Next(); int zone = floor >= 91 ? 3 : floor >= 56 ? 2 : floor >= 26 ? 1 : 0;
                 widths[zone].Add(p.Width);
             }
             foreach (var zone in widths) Assert.That(zone.Count, Is.GreaterThan(5));
@@ -133,6 +133,20 @@ namespace Ma3alem.Tests
                 NUnit.Framework.Assert.That(placement.Floor, NUnit.Framework.Is.EqualTo(floor));
                 NUnit.Framework.Assert.That(placement.Width, NUnit.Framework.Is.InRange(2.4f, 5.53f));
             }
+        }
+        [TestCase(26)] [TestCase(56)] [TestCase(91)]
+        public void StageWidthFactorsAreContinuousAtNewBoundaries(int boundary)
+        {
+            var tuning = new PlatformSpawner.Difficulty();
+            var starts = new[] { 0f, 26f, 56f, 91f };
+            float before = tuning.WidthFactor(boundary - 1, starts);
+            float at = tuning.WidthFactor(boundary, starts);
+            float after = tuning.WidthFactor(boundary + 1, starts);
+            Assert.That(at, Is.LessThanOrEqualTo(before));
+            Assert.That(after, Is.LessThanOrEqualTo(at));
+            Assert.That(before - at, Is.LessThan(0.003f), "No stage-boundary width-factor cliff.");
+            Assert.That(at - after, Is.LessThan(0.003f), "No difficulty reset after the transition.");
+            Assert.That(after, Is.InRange(tuning.zone4Width, tuning.zone1Width));
         }
     }
 }

@@ -9,7 +9,7 @@ namespace Ma3alem
         [SerializeField] private GameObject platformPrefab;
         [SerializeField] private int seed = 81473;
         [SerializeField] private float halfWidth = 6.65f;
-        [SerializeField] private int[] zoneFloorStarts = { 0, 21, 46, 76 };
+        [SerializeField] private int[] zoneFloorStarts = { 0, 26, 56, 91 };
         private float[] zoneStarts;
         private Route guide;
         private readonly List<float> floorHeights = new List<float>();
@@ -21,6 +21,12 @@ namespace Ma3alem
             public float firstWidth = 4f, lastWidth = 2.2f;
             public float firstGap = 1.12f, lastGap = 1.65f, gapVariation = 0.35f;
             public float zone1Width = 1.20f, zone2Width = 1.18f, zone3Width = 1.125f, zone4Width = 1.10f;
+            public float WidthFactor(int floor, float[] starts)
+            {
+                if (floor < starts[1]) return Mathf.Lerp(zone1Width, zone2Width, Mathf.InverseLerp(1, starts[1], floor));
+                if (floor < starts[2]) return Mathf.Lerp(zone2Width, zone3Width, Mathf.InverseLerp(starts[1], starts[2], floor));
+                return Mathf.Lerp(zone3Width, zone4Width, Mathf.InverseLerp(starts[2], starts[3], floor));
+            }
         }
         public float[] ZoneStarts => (float[])zoneStarts.Clone();
         private readonly Queue<GameObject> active = new Queue<GameObject>();
@@ -120,7 +126,7 @@ namespace Ma3alem
                     throw new ArgumentException("Positive zone width factors are required.");
                 random = new System.Random(seed);
                 this.jumpSpeed = jumpSpeed; this.gravity = gravity; this.maxSpeed = maxSpeed; this.halfWidth = halfWidth;
-                starts = zoneStarts == null ? new[] { 0f, 21f, 46f, 76f } : (float[])zoneStarts.Clone();
+                starts = zoneStarts == null ? new[] { 0f, 26f, 56f, 91f } : (float[])zoneStarts.Clone();
                 if (starts.Length != 4 || starts[0] != 0 || starts[1] <= 0 || starts[2] <= starts[1] || starts[3] <= starts[2])
                     throw new ArgumentException("Four increasing zone starts are required.");
                 Previous = new Placement(0, 0, 3.8f);
@@ -134,8 +140,7 @@ namespace Ma3alem
                 float baseline = tuning.firstWidth + (tuning.lastWidth - tuning.firstWidth) * difficulty;
                 float width = Math.Max(tuning.lastWidth, Math.Min(tuning.firstWidth + 0.6f,
                     baseline * (0.82f + (float)random.NextDouble() * 0.36f) + (floor % 6 == 0 ? 0.65f : 0)));
-                float zoneWidth = floor >= starts[3] ? tuning.zone4Width : floor >= starts[2] ? tuning.zone3Width
-                    : floor >= starts[1] ? tuning.zone2Width : tuning.zone1Width;
+                float zoneWidth = tuning.WidthFactor(floor, starts);
                 width = Math.Min(halfWidth * 2 - 0.8f, width * zoneWidth);
                 // A rest-start jump can accelerate in air. Use the shorter, faster-fall flight,
                 // then retain 30% travel reserve and half a body width for a central landing.

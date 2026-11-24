@@ -12,10 +12,10 @@ Four difficulty zones occur in one continuous run. Their platform materials are 
 
 | Floors | Stage name |
 | --- | --- |
-| 1–20 | بلكونات الحارة |
-| 21–45 | فوق السطوح |
-| 46–75 | تحت التشطيب |
-| 76+ | سر الفراعنة |
+| 1–25 | بلكونة بنت الجيران |
+| 26–55 | لحن الموزايكو |
+| 56–90 | سوبر لوكس |
+| 91+ | توت عنخ هموت |
 
 Controls: A/D or arrow keys move; Space jumps and early release reduces jump height; Escape pauses; R restarts after Game Over; Alt+Enter changes display mode. Menus provide replay, return, volume and saved best-score functions.
 
@@ -27,7 +27,7 @@ The following assets are integrated in the Unity project. The game uses its exis
 | --- | --- |
 | Character | 18 transparent Player_*.png animation frames in Assets/Ma3alem/Art, bound to the existing Player prefab. |
 | Platforms | Platform.png and Platform_Zone2.png through Platform_Zone4.png. Four separate transparent sprites; The coffin artwork retains its corrected proportions. |
-| Environment and interface | Environment_Assiut_Static.png with three fixed panels, menu plaques, logo, shisha indicator, smoke and landing effects. |
+| Environment and interface | Environment_Assiut_Static.png contains three permanent panels with four supplied wall inscriptions. Existing logo, menu artwork, shisha indicator and effects are retained. |
 | Speech and sound | Nine supplied Saidi voice WAVs in Assets/Audio/VoiceLines and project sound effects in Assets/Ma3alem/Audio. Voices retain their original performance. |
 | Fonts and Arabic | Lemonada and Noto font resources with SIL Open Font License notices; RTLTMPro support with its MIT license. Existing TMP resources remain included. |
 | Unity content | MainMenu and Gameplay scenes, player/platform/audio prefabs, PhysicsMaterial2D resources, Unity UI and Test Framework packages. |
@@ -58,6 +58,8 @@ Wall rebounds are controlled in code rather than by a bouncy physics material. H
 
 Jump launch velocity = 12 + 13 × (|horizontal speed| / 9.5)^1.4, with the normalized speed clamped to 0–1. At full speed this gives an initial vertical velocity of 25 units/s. Actual jump height also depends on gravity and early release. These values were read from the current Player prefab and controller, not from earlier notes.
 
+Stage transitions occur at floors 26, 56 and 91. Route difficulty and camera pressure use global floor progress and do not restart at a stage change. Platform width factors interpolate continuously between stage anchors, preserving randomized gaps, reachable placements and periodic wider platforms. Player physics, scoring and combos are unchanged.
+
 ## 4 C Sharp Scripts
 
 The implementation contains seven main gameplay scripts and one presentation helper. The full current C# source is included in the Unity source archive under Assets/Ma3alem/Scripts; the table describes the responsibility of each file.
@@ -75,6 +77,6 @@ The implementation contains seven main gameplay scripts and one presentation hel
 
 Editor and verification support: ProjectTools.cs provides import, validation and Windows build utilities. Tests/EditMode and Tests/PlayMode contain NUnit/Unity tests. StandaloneVerification.cs is an opt-in automated-input driver compiled only into verification-enabled builds, not the submitted Windows build.
 
-Verification status: recorded gameplay checks reached all four stages and covered jumping, landing, wall rebounds, pause, restart and menu return. The Windows build includes the selected soundtrack and excludes the optional verification driver. The owner tested the downloaded build and confirmed that everything worked on 24 November 2026. A complete passing automated Unity test suite is not claimed.
+Verification status: 23 Edit Mode tests and 40 Play Mode tests passed with zero failures; 13 explicit capture tests were skipped. Floor/zone checks passed at 25, 26, 55, 56, 90 and 91. A native capture reached all four stages and floor 129, with 27 wall rebounds and zero logged errors. The Windows build embeds the selected soundtrack and excludes the optional verification driver. Earlier owner acceptance predates this stage-range update.
 
 Opening the source: extract Unity_Source.zip, add the project in Unity Hub, allow package import, open Assets/Ma3alem/Scenes/MainMenu.unity, and press Play. To play on Windows, extract Windows_Game.zip completely and keep the executable beside its Data folder, UnityPlayer.dll and runtime folders.

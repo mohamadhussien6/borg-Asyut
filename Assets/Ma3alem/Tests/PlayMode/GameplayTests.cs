@@ -181,7 +181,7 @@ namespace Ma3alem.Tests
             for (int floor = 1; floor <= 2000; floor++)
             {
                 var before = route.Previous; var next = route.Next();
-                int zone = floor < 21 ? 0 : floor < 46 ? 1 : floor < 76 ? 2 : 3;
+                int zone = floor < 26 ? 0 : floor < 56 ? 1 : floor < 91 ? 2 : 3;
                 float gap = next.Y - before.Y;
                 minWidth[zone] = Mathf.Min(minWidth[zone], next.Width); maxWidth[zone] = Mathf.Max(maxWidth[zone], next.Width);
                 minGap[zone] = Mathf.Min(minGap[zone], gap); maxGap[zone] = Mathf.Max(maxGap[zone], gap);
@@ -199,14 +199,14 @@ namespace Ma3alem.Tests
             var route = new PlatformSpawner.Route(81473, player.JumpSpeed, player.Gravity, player.MaxSpeed,
                 game.Follow.PlayfieldHalfWidth, airAcceleration: player.AirAcceleration, fallingMultiplier: player.FallingGravityMultiplier);
             var rows = new System.Collections.Generic.List<string> { "floor,zone,targetRiseSpeed,actualRampedPressure" };
-            foreach (int floor in new[] { 1, 20, 21, 45, 46, 75, 76, 2000 })
+            foreach (int floor in new[] { 1, 24, 25, 26, 54, 55, 56, 89, 90, 91, 2000 })
             {
                 while (route.Previous.Floor < floor) route.Next();
                 float height = route.Previous.Y + 0.002f;
                 game.Scores.Observe(height); player.transform.position = new Vector3(0, height + 0.7f, 0);
                 yield return null; yield return null;
                 Assert.That(game.CurrentFloor, Is.EqualTo(floor));
-                int zone = floor < 21 ? 0 : floor < 46 ? 1 : floor < 76 ? 2 : 3;
+                int zone = floor < 26 ? 0 : floor < 56 ? 1 : floor < 91 ? 2 : 3;
                 Assert.That(game.CurrentZone, Is.EqualTo(zone));
                 Assert.That(game.Follow.RiseSpeed, Is.InRange(0.38f, 1.3501f));
                 rows.Add($"{floor},{zone+1},{game.Follow.RiseSpeed:R},{game.Follow.ActualPressureSpeed:R}");
@@ -580,7 +580,7 @@ namespace Ma3alem.Tests
             var camera = game.Follow;
             var tuning = new UnityEditor.SerializedObject(camera);
             tuning.FindProperty("graceSeconds").floatValue = 0; tuning.ApplyModifiedPropertiesWithoutUndo();
-            player.transform.position = new Vector3(0, 122, 0);
+            player.transform.position = new Vector3(0, game.ZoneStarts[3] + 12, 0);
             yield return new WaitForSecondsRealtime(0.5f);
             Assert.That(game.CurrentZone, Is.EqualTo(3));
             Assert.That(camera.RiseSpeed, Is.GreaterThan(1));
@@ -949,7 +949,7 @@ namespace Ma3alem.Tests
             foreach (int seed in new[] { 0, 4313, 81473 })
             {
             var route = new PlatformSpawner.Route(seed, player.JumpSpeed, player.Gravity, player.MaxSpeed, game.Follow.PlayfieldHalfWidth);
-            foreach (int sample in new[] { 1, 20, 21, 45, 46, 75, 76, 100 })
+            foreach (int sample in new[] { 1, 25, 26, 55, 56, 90, 91, 120 })
             {
                 while (route.Previous.Floor < sample - 1) route.Next();
                 var previous = route.Previous; var next = route.Next();
@@ -1534,7 +1534,7 @@ namespace Ma3alem.Tests
                     Assert.That(ledge, Is.Not.Null);
                     player.Body.position = new Vector2(ledge.position.x, ledge.position.y + 0.18f + 0.7f); player.Body.linearVelocity = Vector2.zero;
                     player.Body.simulated = true; player.SetMove(0); game.Follow.enabled = true;
-                    string[] captions = { "المنطقة الأولى | بلكونات الحارة والأدوار من ١ إلى ٢٠", "المنطقة الثانية | البيوت القديمة والأدوار من ٢١ إلى ٤٥", "المنطقة الثالثة | عمارات تحت التشطيب والأدوار من ٤٦ إلى ٧٥", "المنطقة الرابعة | السطوح العالية من الدور ٧٦" };
+                    string[] captions = { "المنطقة الأولى | بلكونة بنت الجيران والأدوار من ١ إلى ٢٥", "المنطقة الثانية | لحن الموزايكو والأدوار من ٢٦ إلى ٥٥", "المنطقة الثالثة | سوبر لوكس والأدوار من ٥٦ إلى ٩٠", "المنطقة الرابعة | توت عنخ هموت من الدور ٩١" };
                     yield return TourHold("zone-" + (zone + 1), captions[zone], 90);
                 }
                 game.MainMenu(); yield return null; yield return null; game = Object.FindFirstObjectByType<GameManager>();

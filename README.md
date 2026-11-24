@@ -1,4 +1,4 @@
-https://github.com/user-attachments/assets/8532bb6c-5e94-490f-a23f-34166e47baed
+https://github.com/user-attachments/assets/b872ba75-9ba3-40d0-bdb2-5cd6fea31d72
 
 # برج أسيوط · icy tower Asyut
 
@@ -6,7 +6,7 @@ https://github.com/user-attachments/assets/8532bb6c-5e94-490f-a23f-34166e47baed
 
 An Egyptian 2D arcade tower climber set between buildings inspired by the streets of Assiut. Build speed, jump between floors, bounce off walls and perform somersaults through four continuous stages.
 
-**[▶ مشاهدة الإعلان · Watch trailer](https://github.com/user-attachments/assets/8532bb6c-5e94-490f-a23f-34166e47baed)** · **[تحميل اللعبة لويندوز · Download for Windows](https://github.com/mohamadhussien6/icy-tower-Asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[توثيق المشروع · Documentation](https://github.com/mohamadhussien6/icy-tower-Asyut/releases/latest/download/Borg_Asyut_Documentation.pdf)**
+**[▶ مشاهدة الإعلان · Watch trailer](https://github.com/user-attachments/assets/b872ba75-9ba3-40d0-bdb2-5cd6fea31d72)** · **[تحميل اللعبة لويندوز · Download for Windows](https://github.com/mohamadhussien6/borg-Asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[توثيق المشروع · Documentation](https://github.com/mohamadhussien6/borg-Asyut/releases/latest/download/Borg_Asyut_Documentation.pdf)**
 
 ## طريقة اللعب · Gameplay
 
@@ -16,27 +16,27 @@ Keep your momentum to jump higher and skip floors to increase your combo and sco
 
 - جري وقفز يعتمدان على السرعة، مع ارتداد من الحيطان وشقلبات. / Momentum-based movement, wall rebounds and somersaults.
 - أربع مراحل متصلة، لكل منها منصات مختلفة. / Four continuous stages with distinct platform artwork.
-- شخصية بلبس صعيدي، وعمارات مصرية وأصوات صعيدية. / A Saidi character, Egyptian buildings and Saidi voice reactions.
+- شخصية بلبس صعيدي، وعمارات مصرية بكتابات على الحوائط وأصوات صعيدية. / A Saidi character, Egyptian buildings with painted wall inscriptions and Saidi voice reactions.
 - قوائم عربية، وإيقاف مؤقت، وتعليمات لعب وتحكم في الصوت. / Arabic menus, pause, help and sound controls.
 
-[![بلكونات الحارة · Neighborhood Balconies](Media/Screenshots/03_Stage_1.png)](Media/Screenshots/03_Stage_1.png)
+[![بلكونة بنت الجيران · The Neighbor Girl's Balcony](Media/Screenshots/03_Stage_1.png)](Media/Screenshots/03_Stage_1.png)
 
 ## المراحل · Stages
 
 | الأدوار · Floors | المرحلة · Stage | المنصات · Platforms |
 |:---:|---|---|
-| 1–20 | بلكونات الحارة · Neighborhood Balconies | محارة بلكونات قديمة وطوب ظاهر · Chipped balcony plaster and exposed brick |
-| 21–45 | فوق السطوح · Above the Rooftops | موزايكو وأسمنت أسطح قديم · Worn terrazzo and rooftop cement |
-| 46–75 | تحت التشطيب · Under Construction | طوب أحمر وسطح خرساني · Red clay brickwork and concrete |
-| 76+ | سر الفراعنة · Secret of the Pharaohs | توابيت فرعونية بالذهبي والأزرق · Gold and blue pharaonic coffins |
+| 1–25 | بلكونة بنت الجيران · The Neighbor Girl's Balcony | محارة بلكونات قديمة وطوب ظاهر · Chipped balcony plaster and exposed brick |
+| 26–55 | لحن الموزايكو · Mosaic Melody | موزايكو وأسمنت أسطح قديم · Worn terrazzo and rooftop cement |
+| 56–90 | سوبر لوكس · Super Lux | طوب أحمر وسطح خرساني · Red clay brickwork and concrete |
+| 91+ | توت عنخ هموت · Tut Ankh Hamoot | توابيت فرعونية بالذهبي والأزرق · Gold and blue pharaonic coffins |
 
-| فوق السطوح · Above the Rooftops | تحت التشطيب · Under Construction |
+| لحن الموزايكو · Mosaic Melody | سوبر لوكس · Super Lux |
 |:---:|:---:|
-| [![فوق السطوح](Media/Screenshots/04_Stage_2.png)](Media/Screenshots/04_Stage_2.png) | [![تحت التشطيب](Media/Screenshots/05_Stage_3.png)](Media/Screenshots/05_Stage_3.png) |
+| [![لحن الموزايكو](Media/Screenshots/04_Stage_2.png)](Media/Screenshots/04_Stage_2.png) | [![سوبر لوكس](Media/Screenshots/05_Stage_3.png)](Media/Screenshots/05_Stage_3.png) |
 
-**سر الفراعنة · Secret of the Pharaohs · 76+**
+**توت عنخ هموت · Tut Ankh Hamoot · 91+**
 
-[![سر الفراعنة · Secret of the Pharaohs](Media/Screenshots/06_Stage_4.png)](Media/Screenshots/06_Stage_4.png)
+[![توت عنخ هموت · Tut Ankh Hamoot](Media/Screenshots/06_Stage_4.png)](Media/Screenshots/06_Stage_4.png)
 
 ## التحكم · Controls
 

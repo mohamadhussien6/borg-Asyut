@@ -1,9 +1,13 @@
 # Current project status
 
-The four stage designs and Arabic names are integrated: بلكونات الحارة (1–20), فوق السطوح (21–45), تحت التشطيب (46–75), and سر الفراعنة (76+). Stage announcements last three gameplay seconds. The visual updates preserve movement, generation, colliders, camera behavior and difficulty.
+Final stages: بلكونة بنت الجيران (1–25), لحن الموزايكو (26–55), سوبر لوكس (56–90), and توت عنخ هموت (91+). Announcements remain three gameplay seconds. Both scenes use floor starts 0, 26, 56 and 91; artwork selection uses the same configuration.
 
-The Windows download includes the exact selected soundtrack, distributed with the owner's confirmed permission, and the original supplied voice recordings. The optional verification driver is excluded. Build completion, embedded music and archive integrity were checked.
+Route difficulty and camera pressure increase with global floor progress. Stage width factors interpolate continuously between existing endpoints rather than stepping abruptly at a transition. Player physics, movement, wall rebounds, scoring, combos, platform art, collision settings and audio are preserved.
 
-The owner manually tested the downloaded build and reported that everything worked on 24 November 2026. Recorded gameplay checks also covered all four stages, jumping, landing, wall rebounds, pause, restart and menu return. This does not imply that the full automated test suite passed; an earlier complete Play Mode run did not finish.
+Regression results: 23 Edit Mode tests passed; 40 Play Mode tests passed; zero failures. Thirteen explicit capture/review tests were skipped. Boundary cases include floors 25, 26, 55, 56, 90 and 91. The native automated gameplay run covered all four stages with real input and physics. The standalone Windows build was launched successfully and contains no optional verification driver.
 
-The promotional trailer is 30 seconds at 1920 x 1080 and 60 FPS, with reduced music and the original main menu during the final four seconds. Fifteen screenshots and a four-stage comparison are included in Promotional_Media. The GitHub page is in Arabic and English and starts with the trailer.
+The selected music is embedded with owner-confirmed distribution permission. Earlier owner acceptance applies to the prior download; no new human play/listening review is claimed for this stage-range update.
+
+Promotional media uses actual gameplay with the final names and ranges. The trailer remains 30 seconds at 1920 x 1080 and 60 FPS, ending on the original main menu for four seconds. Fifteen screenshots and the four-stage comparison are retained. The GitHub page is Arabic and English.
+
+Four supplied wall inscriptions are baked into the existing background texture. Pixel changes are restricted to four wall regions; the environment sprite metadata and alpha channel are unchanged.

@@ -44,7 +44,7 @@ namespace Ma3alem
         private float comboUntil;
         private float zoneUntil;
         private int announcedZone = -1;
-        private static readonly string[] ZoneNames = { "بلكونات الحارة", "فوق السطوح", "تحت التشطيب", "سر الفراعنة" };
+        private static readonly string[] ZoneNames = { "بلكونة بنت الجيران", "لحن الموزايكو", "سوبر لوكس", "توت عنخ هموت" };
         private static readonly string[] ZoneOrder = { "الأولى", "الثانية", "الثالثة", "الرابعة" };
         private static readonly string[] ComboMessages = { "عاش يا واد!", "يا سلام!", "كمل يا بطل!", "يا ساتر!" };
         private float shownDanger;

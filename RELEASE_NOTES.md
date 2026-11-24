@@ -1,7 +1,23 @@
 # برج أسيوط
 
-An Egyptian arcade tower-climbing game for Windows. Build momentum, jump across floors, rebound off walls and chain somersaults and combos.
+Final stage names and ranges are synchronized across the project, documentation and promotional media:
 
-Four continuous stages: بلكونات الحارة, فوق السطوح, تحت التشطيب and سر الفراعنة. Platform materials range from worn balcony plaster and rooftop terrazzo to exposed brick and pharaonic coffins.
+| Floors | Stage |
+|---|---|
+| 1–25 | بلكونة بنت الجيران |
+| 26–55 | لحن الموزايكو |
+| 56–90 | سوبر لوكس |
+| 91+ | توت عنخ هموت |
 
-Downloads include the Windows game, official gameplay trailer and game documentation. Extract the entire Windows archive before launching the executable. The source uses Unity.
+Stage width factors now interpolate continuously across the configured anchors. Global route difficulty and camera pressure do not reset at transitions. Player movement, jump physics, wall rebounds, scoring, combos, artwork and audio remain unchanged.
+
+Windows build includes the owner-approved selected soundtrack. Documentation retains four sections. The updated 30-second trailer ends on the original main menu. Promotional screenshots are captured from actual gameplay.
+
+Validation: 23 Edit Mode and 40 Play Mode tests passed with zero failures. Thirteen explicit media/review cases were skipped. Floors 25, 26, 55, 56, 90 and 91 were checked.
+
+Four supplied wall inscriptions are baked into the permanent building texture, with the existing architecture preserved:
+
+- جرى إيه يا عم؟ ما تمسك الخشب!
+- إيه ده يا حاج، إنت بتطلع بالتالت؟
+- ما اللي اداك يدينا برضه
+- عينك الله يعينك

@@ -10,3 +10,5 @@
 - Lemonada/Noto font resources retain SIL OFL notices. RTLTMPro and TMP resources retain bundled license notices.
 - Scenes, prefabs, physics materials, package manifests and all .meta files retained. Older source assets remain to preserve editor/build references; generated caches and historical exported previews were removed.
 
+
+- Assets/Ma3alem/Art/Street_Phrases_Paint.png: paint-source atlas for the four supplied phrases. The writing is baked into Environment_Assiut_Static.png; no runtime text objects or colliders were added.

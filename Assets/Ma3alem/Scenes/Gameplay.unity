@@ -286,7 +286,7 @@ MonoBehaviour:
   platformPrefab: {fileID: 100000, guid: 294d4a904fa7aab53028038b404d1929, type: 3}
   seed: 81473
   halfWidth: 4.276185
-  zoneFloorStarts: 00000000150000002e0000004c000000
+  zoneFloorStarts: 000000001a000000380000005b000000
   zoneSprites:
   - {fileID: 21300000, guid: b650621b7c2147bdb72d1443d1e8c587, type: 3}
   - {fileID: 21300000, guid: 60fbb186b896eb520cc4e546e0c171d6, type: 3}
