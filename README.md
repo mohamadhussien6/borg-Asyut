@@ -1,4 +1,4 @@
-https://github.com/user-attachments/assets/b872ba75-9ba3-40d0-bdb2-5cd6fea31d72
+https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
 
 # برج أسيوط · icy tower Asyut
 
@@ -6,7 +6,7 @@ https://github.com/user-attachments/assets/b872ba75-9ba3-40d0-bdb2-5cd6fea31d72
 
 An Egyptian 2D arcade tower climber set between buildings inspired by the streets of Assiut. Build speed, jump between floors, bounce off walls and perform somersaults through four continuous stages.
 
-**[▶ مشاهدة الإعلان · Watch trailer](https://github.com/user-attachments/assets/b872ba75-9ba3-40d0-bdb2-5cd6fea31d72)** · **[تحميل اللعبة لويندوز · Download for Windows](https://github.com/mohamadhussien6/borg-Asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[توثيق المشروع · Documentation](https://github.com/mohamadhussien6/borg-Asyut/releases/latest/download/Borg_Asyut_Documentation.pdf)**
+**[▶ مشاهدة الإعلان · Watch trailer](https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b)** · **[تحميل اللعبة لويندوز · Download for Windows](https://github.com/mohamadhussien6/borg-Asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[توثيق المشروع · Documentation](https://github.com/mohamadhussien6/borg-Asyut/releases/latest/download/Borg_Asyut_Documentation.pdf)**
 
 ## طريقة اللعب · Gameplay
 
