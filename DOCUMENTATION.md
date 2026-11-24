@@ -4,7 +4,7 @@ Borg Asyut Game Documentation
 
 برج أسيوط  |  icy tower Asyut
 
-Unity 6000.3.2f1   •   Windows x64Game description, assets, physics and C# implementation
+Unity   •   Windows x64Game description, assets, physics and C# implementation
 
 1 Game Description
 
@@ -102,4 +102,4 @@ Editor and verification support: ProjectTools.cs provides import, validation and
 
 Verification status: the recorded local native run reached all four zones and floor 98 at 1280×720, with 18 jumps, 21 landings, 18 wall rebounds and zero logged errors at about 60 FPS. Pause/resume, Game Over/restart and menu return passed. Score persistence was not re-tested in that run. An earlier full Play Mode test run did not complete, so a complete passing Unity test suite is not claimed. Evidence identifies the exact executable used; submission-build validation is recorded separately.
 
-Opening the source: extract Unity_Source.zip, add the extracted project in Unity Hub using 6000.3.2f1, allow package import, open Assets/Ma3alem/Scenes/MainMenu.unity, and press Play. The Windows package runs without the Unity Editor; extract the entire archive and keep the executable beside its Data folder and UnityPlayer.dll.
+Opening the source: extract Unity_Source.zip, add the extracted project in Unity Hub , allow package import, open Assets/Ma3alem/Scenes/MainMenu.unity, and press Play. The Windows package runs without the Unity Editor; extract the entire archive and keep the executable beside its Data folder and UnityPlayer.dll.

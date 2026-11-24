@@ -53,7 +53,7 @@ Keep your momentum to jump higher, skip floors to grow your combo, and watch the
 ## Run the project
 
 1. Clone this repository with Git LFS installed, then run `git lfs pull`.
-2. Add the project folder in Unity Hub and use the editor version recorded in `ProjectSettings/ProjectVersion.txt`.
+2. Add the project folder in Unity Hub .
 3. Allow Unity to restore packages and regenerate its Library folder.
 4. Open `Assets/Ma3alem/Scenes/MainMenu.unity` and press Play.
 
