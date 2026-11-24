@@ -1,0 +1,1 @@
+{"name": "Ma3alem.Editor", "references": ["Ma3alem.Runtime"], "includePlatforms": ["Editor"]}

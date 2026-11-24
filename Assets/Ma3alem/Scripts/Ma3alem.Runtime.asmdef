@@ -1,0 +1,9 @@
+{
+  "name": "Ma3alem.Runtime",
+  "rootNamespace": "Ma3alem",
+  "references": [
+    "Unity.ugui",
+    "Unity.TextMeshPro",
+    "RTLTMPro.Shaping"
+  ]
+}

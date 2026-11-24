@@ -1,0 +1,12 @@
+{
+  "name": "Ma3alem.PlayTests",
+  "references": [
+    "Ma3alem.Runtime",
+    "Unity.TextMeshPro",
+    "Unity.ugui"
+  ],
+  "includePlatforms": [],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

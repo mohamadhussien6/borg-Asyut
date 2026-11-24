@@ -1,0 +1,45 @@
+# Unity generated folders; source assets and every asset/folder .meta belong in Git.
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+**/bin/
+**/obj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Bb]uild/
+/[Bb]uilds/
+/MemoryCaptures/
+/Recordings/
+/TestResults/
+/Artifacts/
+# IDE and generated Unity project files (root only; future authored tooling projects remain trackable).
+/.vs/
+/.idea/
+/*.csproj
+/*.sln
+/*.slnx
+/*.suo
+/*.user
+/*.pidb
+/*.booproj
+/*.unityproj
+*.opendb
+*.VC.db
+*.log
+.DS_Store
+Thumbs.db
+# Local credentials must never enter the project.
+.env
+.env.*
+!.env.example
+# The supplied commercial recording stays outside the Unity project.
+/LocalPreviewOnly/
+/Assets/LocalPreviewOnly/
+/Assets/LocalPreviewOnly.meta
+
+# Promotional masters and editor caches belong in release/local media folders.
+/Promotional_Media/
+/Raw_Gameplay_Recordings/
+/Media/*.mp4
+/Documentation/Final/Evidence/
+/Documentation/Final/Cleanup_Report.json

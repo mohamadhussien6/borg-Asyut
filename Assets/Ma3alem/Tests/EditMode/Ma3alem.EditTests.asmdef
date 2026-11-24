@@ -1,0 +1,14 @@
+{
+  "name": "Ma3alem.EditTests",
+  "references": [
+    "Ma3alem.Runtime",
+    "Ma3alem.Editor",
+    "RTLTMPro.Shaping"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}
