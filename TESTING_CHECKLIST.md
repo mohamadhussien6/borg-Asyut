@@ -1,9 +1,21 @@
 # Verification status
 
-Passed on final current local executable: all four zones, jump/landing, both wall rebounds, pause/resume, Game Over/restart, menu return, zero logged errors. Resolution1280x720; about60FPS. Screenshots are actual native captures.
+## Build and package checks
 
-Static preservation passed against current: gameplay scripts, scenes, prefabs, physics/timing and sprite metadata unchanged by platform update. Only four art PNGs, stage-name strings and build bookkeeping changed.
+- Windows build completed with the selected soundtrack embedded.
+- Original music bytes matched the supplied MP3; the Audio prefab references the included asset.
+- Optional verification driver excluded from the Windows player.
+- Windows ZIP integrity checked; uploaded asset digest matched the local archive.
+- Gameplay scripts and physics configuration were preserved during the music packaging fix.
 
-current submission Windows build: compilation passed; selected music included and verification driver omitted. Its full native playthrough was not run in this packaging step.
+## Gameplay review
 
-Not completed: full Unity Play Mode suite (earlier run hung), fresh best-score persistence verification, manual acceptance. Use Unity Test Runner for retained EditMode/PlayMode tests after source import. Do not report these pending checks as passed.
+Recorded native gameplay checks covered all four stages, jumps, landings, wall rebounds, pause, restart, Game Over and menu return. The owner then manually tested the downloaded build and confirmed that everything worked on 24 November 2026. This is owner-reported acceptance, not an additional automated run performed during documentation updates.
+
+## Promotional media
+
+The 30-second 1080p trailer has 1800 frames at 60 FPS. Full audio/video decode passed; the closing shot is the original main menu for four seconds. Fifteen actual game screenshots are retained.
+
+## Automated tests
+
+Edit Mode and Play Mode tests remain in Assets/Ma3alem/Tests. An earlier full Play Mode run did not finish. No complete passing automated suite or fresh automated score-persistence result is claimed.

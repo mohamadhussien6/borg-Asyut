@@ -1,8 +1,9 @@
 # Current project status
 
-24 November 2026 — current. Current four platform sprites and exact stage names are integrated. Coffin head/chest proportions corrected by extending the body. No movement, generation, collider, camera or difficulty changes were introduced by the platform update.
+The four stage designs and Arabic names are integrated: بلكونات الحارة (1–20), فوق السطوح (21–45), تحت التشطيب (46–75), and سر الفراعنة (76+). Stage announcements last three gameplay seconds. The visual updates preserve movement, generation, colliders, camera behavior and difficulty.
 
-Final local native check: all four zones, floor98, 18 jumps, 21 landings, 18 wall rebounds, zero logged errors, about60FPS at1280x720. Pause/resume, Game Over/restart and menu return passed. Score persistence was not re-tested. Earlier complete Play Mode run did not finish; no complete passing suite is claimed.
+The Windows download includes the exact selected soundtrack, distributed with the owner's confirmed permission, and the original supplied voice recordings. The optional verification driver is excluded. Build completion, embedded music and archive integrity were checked.
 
-current Windows submission build compiled successfully with the selected soundtrack and without the verification driver. Native gameplay captures and detailed state checks refer to the local current executable and are labelled accordingly. A manual acceptance playthrough/listening review remains the manual review.
+The owner manually tested the downloaded build and reported that everything worked on 24 November 2026. Recorded gameplay checks also covered all four stages, jumping, landing, wall rebounds, pause, restart and menu return. This does not imply that the full automated test suite passed; an earlier complete Play Mode run did not finish.
 
+The promotional trailer is 30 seconds at 1920 x 1080 and 60 FPS, with reduced music and the original main menu during the final four seconds. Fifteen screenshots and a four-stage comparison are included in Promotional_Media. The GitHub page is in Arabic and English and starts with the trailer.

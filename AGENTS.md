@@ -1,6 +1,6 @@
 # Final practical rules
 
-- Preserve the current Unity 6000.3.2f1 project, GUIDs, approved charcoal-galabeya, white-turban and beige-shawl character and concrete platform.
+- Preserve the current Unity project, GUIDs, approved charcoal-galabeya, white-turban and beige-shawl character and concrete platform.
 - Official player-facing name: برج أسيوط (icy tower Asyut). Connected Arabic UI, Windows PC.
 - Seven main gameplay scripts plus one necessary BuildingBackdrop presentation helper; no police simulation/combat/inventory/progression systems.
 - Four height zones remain within one continuous run. Facades must cover the camera at every height.
