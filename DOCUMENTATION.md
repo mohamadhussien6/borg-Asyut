@@ -62,7 +62,7 @@ Stage transitions occur at floors 26, 56 and 91. Route difficulty and camera pre
 
 ## 4 C Sharp Scripts
 
-The implementation contains seven main gameplay scripts and one presentation helper. This section describes the original runtime source on the main branch, not the separate untested simplified-code proposals. The full current C# source is under `Assets/Ma3alem/Scripts`; the table describes the responsibility of each file. For a feature-by-feature practical discussion guide, see [Practical Discussion](https://github.com/mohamadhussien6/borg-Asyut/blob/main/Documentation/Practical/Actual_Implementation.md).
+The implementation contains seven main gameplay scripts and one presentation helper. The full current C# source is under `Assets/Ma3alem/Scripts`; the table describes the responsibility of each file.
 
 | Script | Responsibility |
 | --- | --- |
@@ -77,6 +77,6 @@ The implementation contains seven main gameplay scripts and one presentation hel
 
 Editor and verification support: ProjectTools.cs provides import, validation and Windows build utilities. Tests/EditMode and Tests/PlayMode contain NUnit/Unity tests. StandaloneVerification.cs is an opt-in automated-input driver compiled only into verification-enabled builds, not the submitted Windows build.
 
-Recorded verification status from the existing release (not a fresh test run for this documentation-only review): 23 Edit Mode tests and 40 Play Mode tests passed with zero failures; 13 explicit capture tests were skipped. Floor/zone checks passed at 25, 26, 55, 56, 90 and 91. A native capture reached all four stages and floor 129, with 27 wall rebounds and zero logged errors. The Windows build embeds the selected soundtrack and excludes the optional verification driver. Earlier owner acceptance predates this stage-range update.
+Recorded verification status from the existing release: 23 Edit Mode tests and 40 Play Mode tests passed with zero failures; 13 explicit capture tests were skipped. Floor/zone checks passed at 25, 26, 55, 56, 90 and 91. A native capture reached all four stages and floor 129, with 27 wall rebounds and zero logged errors. The Windows build embeds the selected soundtrack and excludes the optional verification driver. Earlier owner acceptance predates this stage-range update.
 
 Opening the source: extract Unity_Source.zip, add the project in Unity Hub, allow package import, open Assets/Ma3alem/Scenes/MainMenu.unity, and press Play. To play on Windows, extract Windows_Game.zip completely and keep the executable beside its Data folder, UnityPlayer.dll and runtime folders.

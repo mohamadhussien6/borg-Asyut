@@ -1,4 +1,4 @@
-# Final practical rules
+# Project rules
 
 - Preserve the current Unity project, GUIDs, approved charcoal-galabeya, white-turban and beige-shawl character and concrete platform.
 - Official player-facing name: برج أسيوط (icy tower Asyut). Connected Arabic UI, Windows PC.
