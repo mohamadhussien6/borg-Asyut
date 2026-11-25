@@ -6,7 +6,7 @@ https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
 
 An Egyptian 2D arcade tower climber set between buildings inspired by the streets of Assiut. Build speed, jump between floors, bounce off walls and perform somersaults through four continuous stages.
 
-**[مشاهدة الإعلان · Watch trailer](https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b)** · **[تحميل اللعبة لويندوز · Download for Windows](https://github.com/mohamadhussien6/borg-Asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[توثيق المشروع V2 · Documentation V2](https://github.com/mohamadhussien6/borg-Asyut/blob/main/DOCUMENTATION.md)**
+**[مشاهدة الإعلان · Watch trailer](https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b)** · **[تحميل اللعبة لويندوز · Download for Windows](https://github.com/mohamadhussien6/borg-Asyut/releases/latest/download/Borg_Asyut_Windows.zip)** · **[توثيق المشروع  · Documentation ](https://github.com/mohamadhussien6/borg-Asyut/blob/main/DOCUMENTATION.md)**
 
 ## طريقة اللعب · Gameplay
 
