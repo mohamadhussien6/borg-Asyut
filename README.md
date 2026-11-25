@@ -77,6 +77,14 @@ Download and extract the complete Windows ZIP, then run `icy tower Asyut.exe`. K
 
 `Assets/Ma3alem/Scripts` contains PlayerController, PlatformSpawner, CameraFollow, ScoreManager, GameManager, AudioManager and UIManager, plus the BuildingBackdrop presentation helper. Scenes, prefabs, artwork, fonts and audio remain under `Assets`; project configuration and packages are in `ProjectSettings` and `Packages`. Tests are in `Assets/Ma3alem/Tests`.
 
+## شرح التنفيذ للمناقشة · Practical discussion
+
+[شرح التنفيذ الفعلي والأكواد المهمة · Actual implementation and key code excerpts](Documentation/Practical/Actual_Implementation.md) · [التوثيق النصي · Source documentation](DOCUMENTATION.md).
+
+الشرح مبني على الأكواد الفعلية في الفرع الرئيسي: المنصات بتتولد بمسافات متغيرة مع إعادة استخدام 28 منصة، الأنيميشن بالـSpriteRenderer، والواجهة بتتجهز بالكود مع TextMeshPro وRTLTMPro. نسخ التبسيط المقترحة غير مدمجة في اللعبة الحالية.
+
+This guide describes the actual main-branch runtime: variable-gap pooled platforms, code-driven sprite animation, and runtime-built Arabic UI. Untested simplified-code proposals are not part of the current game. The existing release is unchanged.
+
 ## الأصول والتراخيص · Assets and attribution
 
 - التسجيلات الصعيدية محفوظة بأدائها وسرعتها وطبقتها الأصلية، والمؤثرات داخل `Assets/Ma3alem/Audio`. / Supplied Saidi recordings preserve their original performance, speed and pitch; effects are in `Assets/Ma3alem/Audio`.

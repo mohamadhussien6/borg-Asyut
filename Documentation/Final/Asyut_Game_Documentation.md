@@ -2,7 +2,7 @@
 
 برج أسيوط  |  icy tower Asyut
 
-Windows x64Game description, assets, physics and C# implementation
+Windows x64 | Game description, assets, physics and C# implementation
 
 ## 1 Game Description
 
@@ -62,21 +62,21 @@ Stage transitions occur at floors 26, 56 and 91. Route difficulty and camera pre
 
 ## 4 C Sharp Scripts
 
-The implementation contains seven main gameplay scripts and one presentation helper. The full current C# source is included in the Unity source archive under Assets/Ma3alem/Scripts; the table describes the responsibility of each file.
+The implementation contains seven main gameplay scripts and one presentation helper. This section describes the original runtime source on the main branch, not the separate untested simplified-code proposals. The full current C# source is under `Assets/Ma3alem/Scripts`; the table describes the responsibility of each file. For a feature-by-feature practical discussion guide, see [Practical Discussion](https://github.com/mohamadhussien6/borg-Asyut/blob/main/Documentation/Practical/Actual_Implementation.md).
 
 | Script | Responsibility |
 | --- | --- |
-| PlayerController.cs | Keyboard input, momentum, braking, jump timing and height, wall rebounds, landing events and character animation. |
-| PlatformSpawner.cs | Seeded platform generation, reachable placements, object pooling, floor indexing and selection of the four stage sprites. |
+| PlayerController.cs | Keyboard input, momentum, braking, jump timing and height, wall rebounds, landing events, procedural landing dust and code-driven sprite-frame animation (visual-only rotation). |
+| PlatformSpawner.cs | Seeded platform generation with variable gaps and reachability checks; 28 instantiated platforms recycled through Queue and Stack; a List of heights with binary search and a collider-to-floor Dictionary; selection of the four stage sprites. |
 | CameraFollow.cs | Upward camera tracking, increasing camera pressure, playfield bounds and the lower death boundary. |
 | ScoreManager.cs | Height points, landing combos, duplicate-floor protection and PlayerPrefs best-score persistence. |
 | GameManager.cs | Menu, playing, pause and Game Over states; initialization, restart, return to menu and current-zone queries. |
 | AudioManager.cs | Persistent music source, supplied voice events, voice priorities, sound effects, mute and volume. Missing music is handled without substituting a track. |
-| UIManager.cs | Arabic menus and HUD, connected RTL text, score/floor/combo feedback, shisha indicator and three-second stage announcements. |
+| UIManager.cs | Runtime-created Canvas, menus, buttons and HUD; TextMeshPro and RTLTMPro text shaping; score/floor/combo feedback, shisha indicator with procedural smoke and three-second stage announcements. |
 | BuildingBackdrop.cs | Displays the permanent decorative Assiut environment separately from the physical walls. |
 
 Editor and verification support: ProjectTools.cs provides import, validation and Windows build utilities. Tests/EditMode and Tests/PlayMode contain NUnit/Unity tests. StandaloneVerification.cs is an opt-in automated-input driver compiled only into verification-enabled builds, not the submitted Windows build.
 
-Verification status: 23 Edit Mode tests and 40 Play Mode tests passed with zero failures; 13 explicit capture tests were skipped. Floor/zone checks passed at 25, 26, 55, 56, 90 and 91. A native capture reached all four stages and floor 129, with 27 wall rebounds and zero logged errors. The Windows build embeds the selected soundtrack and excludes the optional verification driver. Earlier owner acceptance predates this stage-range update.
+Recorded verification status from the existing release (not a fresh test run for this documentation-only review): 23 Edit Mode tests and 40 Play Mode tests passed with zero failures; 13 explicit capture tests were skipped. Floor/zone checks passed at 25, 26, 55, 56, 90 and 91. A native capture reached all four stages and floor 129, with 27 wall rebounds and zero logged errors. The Windows build embeds the selected soundtrack and excludes the optional verification driver. Earlier owner acceptance predates this stage-range update.
 
 Opening the source: extract Unity_Source.zip, add the project in Unity Hub, allow package import, open Assets/Ma3alem/Scenes/MainMenu.unity, and press Play. To play on Windows, extract Windows_Game.zip completely and keep the executable beside its Data folder, UnityPlayer.dll and runtime folders.
