@@ -1,4 +1,4 @@
-# Practical Working Conventions
+# Working Conventions
 
 Keep the project small: seven main gameplay scripts, one Egyptian cartoon style, Arabic UI with correct shaping/RTL, optional real owner recordings, Windows only. Do not introduce progression systems or advanced architecture.
 
