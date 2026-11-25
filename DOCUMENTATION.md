@@ -2,7 +2,7 @@
 
 برج أسيوط  |  icy tower Asyut
 
-Windows x64 | Game description, assets, physics and C# implementation
+Windows x64 | Unity 6000.3.2f1 | Game description, assets, physics and C# implementation
 
 ## 1 Game Description
 
@@ -26,7 +26,7 @@ The following assets are integrated in the Unity project. The game uses its exis
 | Asset group | Existing project content |
 | --- | --- |
 | Character | 18 transparent Player_*.png animation frames in Assets/Ma3alem/Art, bound to the existing Player prefab. |
-| Platforms | Platform.png and Platform_Zone2.png through Platform_Zone4.png. Four separate transparent sprites; The coffin artwork retains its corrected proportions. |
+| Platforms | Platform.png and Platform_Zone2.png through Platform_Zone4.png. Four separate transparent sprites; the coffin artwork retains its corrected proportions. |
 | Environment and interface | Environment_Assiut_Static.png contains three permanent panels with four supplied wall inscriptions. Existing logo, menu artwork, shisha indicator and effects are retained. |
 | Speech and sound | Nine supplied Saidi voice WAVs in Assets/Audio/VoiceLines and project sound effects in Assets/Ma3alem/Audio. Voices retain their original performance. |
 | Fonts and Arabic | Lemonada and Noto font resources with SIL Open Font License notices; RTLTMPro support with its MIT license. Existing TMP resources remain included. |
@@ -34,7 +34,7 @@ The following assets are integrated in the Unity project. The game uses its exis
 
 The selected soundtrack is embedded in the Windows build and included at Assets/Ma3alem/Audio/Music/Selected_Music.mp3, with distribution permission confirmed by the project owner. The duplicate LocalPreviewOnly directory is excluded from source packages. Original voice recordings, sound effects and third-party license notices are retained.
 
-Actual gameplay capture of the fourth stage. Promotional_Media contains 15 full-HD screenshots, a four-stage comparison and a 30-second 1920 x 1080 trailer at 60 FPS. The trailer ends with the original main menu for four seconds.
+Promotional media includes 15 full-HD gameplay screenshots, a four-stage comparison and a 30-second 1920 x 1080 trailer at 60 FPS. The trailer ends with the original main menu for four seconds.
 
 ## 3 Type of Physics Used
 
@@ -79,4 +79,4 @@ Editor and verification support: ProjectTools.cs provides import, validation and
 
 Recorded verification status from the existing release: 23 Edit Mode tests and 40 Play Mode tests passed with zero failures; 13 explicit capture tests were skipped. Floor/zone checks passed at 25, 26, 55, 56, 90 and 91. A native capture reached all four stages and floor 129, with 27 wall rebounds and zero logged errors. The Windows build embeds the selected soundtrack and excludes the optional verification driver. Earlier owner acceptance predates this stage-range update.
 
-Opening the source: extract Unity_Source.zip, add the project in Unity Hub, allow package import, open Assets/Ma3alem/Scenes/MainMenu.unity, and press Play. To play on Windows, extract Windows_Game.zip completely and keep the executable beside its Data folder, UnityPlayer.dll and runtime folders.
+Opening the source: clone the GitHub repository with Git LFS installed, run git lfs pull, add the project in Unity Hub, allow package import, open Assets/Ma3alem/Scenes/MainMenu.unity, and press Play. To play on Windows, extract Borg_Asyut_Windows.zip completely and run icy tower Asyut.exe beside its Data folder, UnityPlayer.dll and runtime folders.
