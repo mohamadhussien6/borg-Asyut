@@ -2,7 +2,7 @@
 
 برج أسيوط  |  icy tower Asyut
 
-Windows x64 | Unity 6000.3.2f1 | Game description, assets, physics and C# implementation
+Windows x64 | Game description, assets, physics and C# implementation
 
 ## 1 Game Description
 
