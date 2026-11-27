@@ -1,5 +1,15 @@
 # Current project status
 
+<p align="center">
+  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/README.md"><img alt="Project Home" src="https://img.shields.io/badge/Project_Home-24292F?style=for-the-badge&amp;logo=github&amp;logoColor=white" height="28"></a>
+  &nbsp;
+  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/Documentation/Final/Asyut_Game_Documentation_Final.pdf"><img alt="Documentation PDF" src="https://img.shields.io/badge/Documentation_PDF-2EA44F?style=for-the-badge&amp;logo=adobeacrobatreader&amp;logoColor=white" height="28"></a>
+  &nbsp;
+  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/TESTING_CHECKLIST.md"><img alt="Test Results" src="https://img.shields.io/badge/Test_Results-475569?style=for-the-badge" height="28"></a>
+  &nbsp;
+  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/RELEASE_NOTES.md"><img alt="Release Notes" src="https://img.shields.io/badge/Release_Notes-475569?style=for-the-badge" height="28"></a>
+</p>
+
 Final stages: بلكونة بنت الجيران (1–25), لحن الموزايكو (26–55), سوبر لوكس (56–90), and توت عنخ هموت (91+). Announcements remain three gameplay seconds. Both scenes use floor starts 0, 26, 56 and 91; artwork selection uses the same configuration.
 
 Route difficulty and camera pressure increase with global floor progress. Stage width factors interpolate continuously between existing endpoints rather than stepping abruptly at a transition. Player physics, movement, wall rebounds, scoring, combos, platform art, collision settings and audio are preserved.
