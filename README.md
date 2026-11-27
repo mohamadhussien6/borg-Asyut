@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Media/Logo.png" alt="برج أسيوط · icy tower Asyut" width="420">
+</p>
+
 https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
 
 # برج أسيوط · icy tower Asyut
