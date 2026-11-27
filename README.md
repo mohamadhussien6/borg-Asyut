@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  راجل صعيدي سرق قطعة أثرية نادرة من عصابة لتهريب الآثار، وملقاش قدامه طريق للهرب غير لفوق. اقفز بين بلكونات عمارات أسيوط، واعمل شقلبات، واطلع لأعلى دور تقدر توصله.<br>
-  An Egyptian 2D arcade tower climber where a Sa’idi man steals a rare artifact from a smuggling gang. With nowhere to run but up, leap between balconies, chain combos, and climb as high as you can.
+  الحكاية بدأت لما واحد صعيدي حط إيده على حتة آثار من اللي ناس ناوية تبيع تاريخ البلد عشانها لما اتقفش وبقوا وراه في كل حتة طلع عالعمارات، وكل دور بمصيبة جديدة... بس النزول ملوش سكة!<br>
+  It all started when a Sa’idi man got his hands on an ancient artifact that some people were willing to sell their country's history for. With everyone on his tail, he took to the buildings. Every floor brings fresh trouble... and there's no way back down!
 </p>
 
 <p align="center">
