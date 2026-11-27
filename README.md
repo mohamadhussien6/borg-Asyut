@@ -6,6 +6,8 @@ https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
 
 An Egyptian 2D arcade tower climber set in the streets of Assiut.
 
+**Engine:** Unity 6000.3.2f1 · **Language:** C# · **Platform:** Windows (x64)
+
 <p align="center">
   <a href="https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b"><img src="https://img.shields.io/badge/Watch_Trailer-94701E?style=for-the-badge&amp;logo=youtube&amp;logoColor=white" alt="Watch Trailer" height="32"></a>
   &nbsp;
