@@ -25,8 +25,6 @@ Keep your momentum to jump higher and skip floors to increase your combo and sco
 - شخصية بلبس صعيدي، وعمارات مصرية بكتابات على الحوائط وأصوات صعيدية. / A Saidi character, Egyptian buildings with painted wall inscriptions and Saidi voice reactions.
 - قوائم عربية، وإيقاف مؤقت، وتعليمات لعب وتحكم في الصوت. / Arabic menus, pause, help and sound controls.
 
-[![بلكونة بنت الجيران · The Neighbor Girl's Balcony](Media/Screenshots/03_Stage_1.png)](Media/Screenshots/03_Stage_1.png)
-
 ## المراحل · Stages
 
 | الأدوار · Floors | المرحلة · Stage | المنصات · Platforms |
@@ -36,13 +34,16 @@ Keep your momentum to jump higher and skip floors to increase your combo and sco
 | 56–90 | سوبر لوكس · Super Lux | طوب أحمر وسطح خرساني · Red clay brickwork and concrete |
 | 91+ | توت عنخ هموت · Tut Ankh Hamoot | توابيت فرعونية بالذهبي والأزرق · Gold and blue pharaonic coffins |
 
-| لحن الموزايكو · Mosaic Melody | سوبر لوكس · Super Lux |
-|:---:|:---:|
-| [![لحن الموزايكو](Media/Screenshots/04_Stage_2.png)](Media/Screenshots/04_Stage_2.png) | [![سوبر لوكس](Media/Screenshots/05_Stage_3.png)](Media/Screenshots/05_Stage_3.png) |
-
-**توت عنخ هموت · Tut Ankh Hamoot · 91+**
-
-[![توت عنخ هموت · Tut Ankh Hamoot](Media/Screenshots/06_Stage_4.png)](Media/Screenshots/06_Stage_4.png)
+<table>
+  <tr>
+    <td width="50%" align="center"><a href="Media/Screenshots/03_Stage_1.png"><img src="Media/Screenshots/03_Stage_1.png" alt="بلكونة بنت الجيران · The Neighbor Girl's Balcony" width="420"></a><br><strong>بلكونة بنت الجيران · The Neighbor Girl's Balcony</strong></td>
+    <td width="50%" align="center"><a href="Media/Screenshots/04_Stage_2.png"><img src="Media/Screenshots/04_Stage_2.png" alt="لحن الموزايكو · Mosaic Melody" width="420"></a><br><strong>لحن الموزايكو · Mosaic Melody</strong></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><a href="Media/Screenshots/05_Stage_3.png"><img src="Media/Screenshots/05_Stage_3.png" alt="سوبر لوكس · Super Lux" width="420"></a><br><strong>سوبر لوكس · Super Lux</strong></td>
+    <td width="50%" align="center"><a href="Media/Screenshots/06_Stage_4.png"><img src="Media/Screenshots/06_Stage_4.png" alt="توت عنخ هموت · Tut Ankh Hamoot" width="420"></a><br><strong>توت عنخ هموت · Tut Ankh Hamoot</strong></td>
+  </tr>
+</table>
 
 ## التحكم · Controls
 
