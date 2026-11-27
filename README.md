@@ -62,7 +62,11 @@ Keep your momentum to jump higher and skip floors to increase your combo and sco
 |:---:|:---:|
 | [![نقاط وCombo · Score and combo](Media/Screenshots/09_Combo_High_Score.png)](Media/Screenshots/09_Combo_High_Score.png) | [![القائمة الرئيسية · Main menu](Media/Screenshots/01_Main_Menu.png)](Media/Screenshots/01_Main_Menu.png) |
 
-[كل الصور · All screenshots](Media/Screenshots) · [مقارنة المراحل الأربع · Four-stage comparison](Media/Four_Stages_Comparison.png)
+<p align="center">
+  <a href="Media/Screenshots"><img src="https://img.shields.io/badge/All_Screenshots-8250DF?style=for-the-badge&amp;logo=googlephotos&amp;logoColor=white" alt="All Screenshots" height="32"></a>
+  &nbsp;
+  <a href="Media/Four_Stages_Comparison.png"><img src="https://img.shields.io/badge/Four_Stage_Comparison-E36B19?style=for-the-badge" alt="Four Stage Comparison" height="32"></a>
+</p>
 
 ## تشغيل نسخة ويندوز · Play on Windows
 
