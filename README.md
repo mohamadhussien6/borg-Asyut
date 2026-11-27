@@ -2,15 +2,16 @@
   <img src="Media/Logo.png" alt="برج أسيوط · icy tower Asyut" width="420">
 </p>
 
-https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
+<h1 align="center">برج أسيوط · icy tower Asyut</h1>
 
-# برج أسيوط · icy tower Asyut
+<p align="center">
+  لعبة أركيد مصرية ثنائية الأبعاد بتاخدك بين عمارات أسيوط. اطلع لأعلى دور تقدر توصله بشخصية صعيدية وسط أجواء مصرية.<br>
+  An Egyptian 2D arcade tower climber set in the streets of Assiut.
+</p>
 
-لعبة أركيد مصرية ثنائية الأبعاد بتاخدك بين عمارات أسيوط. اطلع لأعلى دور تقدر توصله بشخصية صعيدية وسط أجواء مصرية.
-
-An Egyptian 2D arcade tower climber set in the streets of Assiut.
-
-**Engine:** Unity 6000.3.2f1 · **Language:** C# · **Platform:** Windows (x64)
+<p align="center">
+  <strong>Engine:</strong> Unity 6000.3.2f1 · <strong>Language:</strong> C# · <strong>Platform:</strong> Windows (x64)
+</p>
 
 <p align="center">
   <a href="https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b"><img src="https://img.shields.io/badge/Watch_Trailer-94701E?style=for-the-badge&amp;logo=youtube&amp;logoColor=white" alt="Watch Trailer" height="32"></a>
@@ -19,6 +20,8 @@ An Egyptian 2D arcade tower climber set in the streets of Assiut.
   &nbsp;
   <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/Documentation/Final/Asyut_Game_Documentation_Final.pdf"><img src="https://img.shields.io/badge/Documentation_(PDF)-94701E?style=for-the-badge&amp;logo=adobeacrobatreader&amp;logoColor=white" alt="Documentation (PDF)" height="32"></a>
 </p>
+
+https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
 
 ## طريقة اللعب · Gameplay
 
