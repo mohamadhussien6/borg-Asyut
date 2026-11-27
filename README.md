@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Media/Rustic%20Asyut%20Tower%20Signboards.png" alt="برج أسيوط · icy tower Asyut — اللي أبوه صعيدي ميخافِش!" width="800">
+  <img src="Media/Weathered%20Asyut%20Tower%20Sign%20Duo.png" alt="برج أسيوط · icy tower Asyut — اللي أبوه صعيدي ميخافِش!" width="800">
 </p>
 
 <p align="center">
