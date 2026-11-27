@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
 An Egyptian 2D arcade tower climber set between buildings inspired by the streets of Assiut. Build speed, jump between floors, bounce off walls and perform somersaults through four continuous stages.
 
 <p align="center">
-  <a href="https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b"><img src="https://img.shields.io/badge/Watch_Trailer-FF0000?style=for-the-badge&amp;logo=youtube&amp;logoColor=white" alt="Watch Trailer" height="32"></a>
+  <a href="https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b"><img src="https://img.shields.io/badge/Watch_Trailer-D32F2F?style=for-the-badge&amp;logo=youtube&amp;logoColor=white" alt="Watch Trailer" height="32"></a>
   &nbsp;
   <a href="https://github.com/mohamadhussien6/borg-Asyut/releases/latest/download/Borg_Asyut_Windows.zip"><img src="https://img.shields.io/badge/Download_for_Windows-0078D4?style=for-the-badge" alt="Download for Windows" height="32"></a>
   &nbsp;
@@ -63,9 +63,9 @@ Keep your momentum to jump higher and skip floors to increase your combo and sco
 | [![نقاط وCombo · Score and combo](Media/Screenshots/09_Combo_High_Score.png)](Media/Screenshots/09_Combo_High_Score.png) | [![القائمة الرئيسية · Main menu](Media/Screenshots/01_Main_Menu.png)](Media/Screenshots/01_Main_Menu.png) |
 
 <p align="center">
-  <a href="Media/Screenshots"><img src="https://img.shields.io/badge/All_Screenshots-8250DF?style=for-the-badge&amp;logo=googlephotos&amp;logoColor=white" alt="All Screenshots" height="32"></a>
+  <a href="Media/Screenshots"><img src="https://img.shields.io/badge/All_Screenshots-555555?style=for-the-badge&amp;logo=googlephotos&amp;logoColor=white" alt="All Screenshots" height="32"></a>
   &nbsp;
-  <a href="Media/Four_Stages_Comparison.png"><img src="https://img.shields.io/badge/Four_Stage_Comparison-E36B19?style=for-the-badge" alt="Four Stage Comparison" height="32"></a>
+  <a href="Media/Four_Stages_Comparison.png"><img src="https://img.shields.io/badge/Four_Stage_Comparison-555555?style=for-the-badge" alt="Four Stage Comparison" height="32"></a>
 </p>
 
 ## تشغيل نسخة ويندوز · Play on Windows
