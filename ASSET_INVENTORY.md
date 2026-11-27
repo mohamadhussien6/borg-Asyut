@@ -1,5 +1,13 @@
 # Current asset inventory
 
+<p align="center">
+  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/README.md"><img alt="Project Home" src="https://img.shields.io/badge/Project_Home-24292F?style=for-the-badge&amp;logo=github&amp;logoColor=white" height="28"></a>
+  &nbsp;
+  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/Documentation/Final/Asyut_Game_Documentation_Final.pdf"><img alt="Documentation PDF" src="https://img.shields.io/badge/Documentation_PDF-2EA44F?style=for-the-badge&amp;logo=adobeacrobatreader&amp;logoColor=white" height="28"></a>
+  &nbsp;
+  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/CURRENT_STATUS.md"><img alt="Project Status" src="https://img.shields.io/badge/Project_Status-475569?style=for-the-badge" height="28"></a>
+</p>
+
 - Assets/Ma3alem/Art/Player_*.png:18 active Saidi character animation frames.
 - Platform.png and Platform_Zone2..4.png:four separate current platform skins, original importer/GUID alignment retained; corrected gold/blue coffin is stage4.
 - Environment_Assiut_Static.png:permanent three-panel Assiut-inspired residential background. Existing writing, pipes, plants and balcony details retained.
