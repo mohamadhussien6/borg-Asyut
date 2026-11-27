@@ -4,7 +4,7 @@
 
 <p align="center">
   الحكاية بدأت لما واحد صعيدي حط إيده على حتة آثار من اللي ناس ناوية تبيع تاريخ البلد عشانها لما اتقفش وبقوا وراه في كل حتة طلع عالعمارات، وكل دور بمصيبة جديدة... بس النزول ملوش سكة!<br>
-  It all started when a Sa’idi man got his hands on an ancient artifact that some people were willing to sell their country's history for. With everyone on his tail, he took to the buildings. Every floor brings fresh trouble... and there's no way back down!
+  An Egyptian 2D arcade platformer where you climb the buildings of Asyut, chain combos, and chase high scores.
 </p>
 
 <p align="center">
