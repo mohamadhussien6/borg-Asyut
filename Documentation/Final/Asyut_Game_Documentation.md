@@ -1,4 +1,4 @@
-# Borg Asyut Game Documentation V2
+# Borg Asyut Game Documentation
 
 برج أسيوط  |  icy tower Asyut
 
