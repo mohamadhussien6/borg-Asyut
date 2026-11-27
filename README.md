@@ -2,9 +2,9 @@ https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
 
 # برج أسيوط · icy tower Asyut
 
-لعبة أركيد مصرية ثنائية الأبعاد تدور بين عمارات مستوحاة من حواري أسيوط. تحكّم في شخصية صعيدية، واجمع السرعة للقفز بين الأدوار والارتداد من الحيطان وتنفيذ الشقلبات عبر أربع مراحل متصلة.
+لعبة أركيد مصرية ثنائية الأبعاد بتاخدك بين عمارات أسيوط. اطلع لأعلى دور تقدر توصله بشخصية صعيدية وسط أجواء مصرية.
 
-An Egyptian 2D arcade tower climber set between buildings inspired by the streets of Assiut. Build speed, jump between floors, bounce off walls and perform somersaults through four continuous stages.
+An Egyptian 2D arcade tower climber set in the streets of Assiut.
 
 <p align="center">
   <a href="https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b"><img src="https://img.shields.io/badge/Watch_Trailer-94701E?style=for-the-badge&amp;logo=youtube&amp;logoColor=white" alt="Watch Trailer" height="32"></a>
@@ -16,14 +16,14 @@ An Egyptian 2D arcade tower climber set between buildings inspired by the street
 
 ## طريقة اللعب · Gameplay
 
-حافظ على سرعتك عشان تقفز أعلى، وتخطَّ عدة أدوار في القفزة الواحدة لزيادة الـCombo والنقاط. راقب مؤشر الخطر على شكل الشيشة مع صعود الكاميرا؛ السقوط خارج الشاشة ينهي المحاولة، وأعلى نتيجة بتتحفظ للمحاولات الجاية.
+- اجمع سرعة عشان تقفز أعلى، وارتد من الحيطان واعمل شقلبات.
+- تخطّى أكتر من دور في قفزة واحدة عشان تزود الـ Combo والنقاط.
+- اطلع عبر أربع مراحل متصلة، وراقب مؤشر الخطر على شكل الشيشة مع صعود الكاميرا.
+- لو وقعت تحت الشاشة، المحاولة بتنتهي وأعلى نتيجة بتتحفظ تلقائيًا.
 
-Keep your momentum to jump higher and skip floors to increase your combo and score. Watch the shisha-shaped danger meter as the camera climbs. Falling below the screen ends the run; your best score is saved for the next attempt.
+اللعبة فيها قوائم عربية، وأصوات صعيدية، وتحكم في الصوت وإيقاف مؤقت وتعليمات للعب.
 
-- جري وقفز يعتمدان على السرعة، مع ارتداد من الحيطان وشقلبات. / Momentum-based movement, wall rebounds and somersaults.
-- أربع مراحل متصلة، لكل منها منصات مختلفة. / Four continuous stages with distinct platform artwork.
-- شخصية بلبس صعيدي، وعمارات مصرية بكتابات على الحوائط وأصوات صعيدية. / A Saidi character, Egyptian buildings with painted wall inscriptions and Saidi voice reactions.
-- قوائم عربية، وإيقاف مؤقت، وتعليمات لعب وتحكم في الصوت. / Arabic menus, pause, help and sound controls.
+*Build momentum, skip floors and beat your high score across four stages before the rising camera catches up.*
 
 ## المراحل · Stages
 
