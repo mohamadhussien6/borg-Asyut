@@ -2,6 +2,8 @@
   <img src="Media/Logo.png" alt="برج أسيوط · icy tower Asyut" width="420">
 </p>
 
+<p align="center"><strong>اللي أبوه صعيدي ميخافِش</strong></p>
+
 <h1 align="center">برج أسيوط · icy tower Asyut</h1>
 
 <p align="center">
