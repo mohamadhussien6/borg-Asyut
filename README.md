@@ -1,10 +1,6 @@
-<p align="center">
-  <img src="Media/Logo.png" alt="برج أسيوط · icy tower Asyut" width="420">
-</p>
+<h1 align="center">برج أسيوط · icy tower Asyut</h1>
 
 <p align="center"><strong>اللي أبوه صعيدي ميخافِش</strong></p>
-
-<h1 align="center">برج أسيوط · icy tower Asyut</h1>
 
 <p align="center">
   لعبة أركيد مصرية ثنائية الأبعاد بتاخدك بين عمارات أسيوط. اطلع لأعلى دور تقدر توصله بشخصية صعيدية وسط أجواء مصرية.<br>
