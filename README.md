@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  لعبة أركيد مصرية ثنائية الأبعاد بتاخدك بين عمارات أسيوط. اطلع لأعلى دور تقدر توصله بشخصية صعيدية وسط أجواء مصرية.<br>
-  An Egyptian 2D arcade tower climber set in the streets of Assiut.
+  راجل صعيدي سرق قطعة أثرية نادرة من عصابة لتهريب الآثار، وملقاش قدامه طريق للهرب غير لفوق. اقفز بين بلكونات عمارات أسيوط، واعمل شقلبات، واطلع لأعلى دور تقدر توصله.<br>
+  An Egyptian 2D arcade tower climber where a Sa’idi man steals a rare artifact from a smuggling gang. With nowhere to run but up, leap between balconies, chain combos, and climb as high as you can.
 </p>
 
 <p align="center">
