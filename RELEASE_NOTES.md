@@ -1,13 +1,5 @@
 # برج أسيوط
 
-<p align="center">
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/README.md"><img alt="Project Home" src="https://img.shields.io/badge/Project_Home-24292F?style=for-the-badge&amp;logo=github&amp;logoColor=white" height="28"></a>
-  &nbsp;
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/Documentation/Final/Asyut_Game_Documentation_Final.pdf"><img alt="Documentation PDF" src="https://img.shields.io/badge/Documentation_PDF-2EA44F?style=for-the-badge&amp;logo=adobeacrobatreader&amp;logoColor=white" height="28"></a>
-  &nbsp;
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/CURRENT_STATUS.md"><img alt="Project Status" src="https://img.shields.io/badge/Project_Status-475569?style=for-the-badge" height="28"></a>
-</p>
-
 Final stage names and ranges are synchronized across the project, documentation and promotional media:
 
 | Floors | Stage |

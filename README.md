@@ -14,30 +14,6 @@ An Egyptian 2D arcade tower climber set between buildings inspired by the street
   <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/Documentation/Final/Asyut_Game_Documentation_Final.pdf"><img src="https://img.shields.io/badge/Documentation_(PDF)-2EA44F?style=for-the-badge&amp;logo=adobeacrobatreader&amp;logoColor=white" alt="Documentation (PDF)" height="32"></a>
 </p>
 
-## ملفات المشروع · Project Resources
-
-<p align="center">
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/DOCUMENTATION.md"><img alt="Read Online" src="https://img.shields.io/badge/Read_Online-475569?style=for-the-badge" height="28"></a>
-  &nbsp;
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/CURRENT_STATUS.md"><img alt="Project Status" src="https://img.shields.io/badge/Project_Status-475569?style=for-the-badge" height="28"></a>
-  &nbsp;
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/RELEASE_NOTES.md"><img alt="Release Notes" src="https://img.shields.io/badge/Release_Notes-475569?style=for-the-badge" height="28"></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/TESTING_CHECKLIST.md"><img alt="Test Results" src="https://img.shields.io/badge/Test_Results-475569?style=for-the-badge" height="28"></a>
-  &nbsp;
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/Documentation/Final/Project_Update_Verification.md"><img alt="Verification" src="https://img.shields.io/badge/Verification-475569?style=for-the-badge" height="28"></a>
-  &nbsp;
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/ASSET_INVENTORY.md"><img alt="Asset Inventory" src="https://img.shields.io/badge/Asset_Inventory-475569?style=for-the-badge" height="28"></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/CONTRIBUTING.md"><img alt="Contributing" src="https://img.shields.io/badge/Contributing-475569?style=for-the-badge" height="28"></a>
-  &nbsp;
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/TASKS.md"><img alt="Project Tasks" src="https://img.shields.io/badge/Project_Tasks-475569?style=for-the-badge" height="28"></a>
-</p>
-
 ## طريقة اللعب · Gameplay
 
 حافظ على سرعتك عشان تقفز أعلى، وتخطَّ عدة أدوار في القفزة الواحدة لزيادة الـCombo والنقاط. راقب مؤشر الخطر على شكل الشيشة مع صعود الكاميرا؛ السقوط خارج الشاشة ينهي المحاولة، وأعلى نتيجة بتتحفظ للمحاولات الجاية.
@@ -86,11 +62,7 @@ Keep your momentum to jump higher and skip floors to increase your combo and sco
 |:---:|:---:|
 | [![نقاط وCombo · Score and combo](Media/Screenshots/09_Combo_High_Score.png)](Media/Screenshots/09_Combo_High_Score.png) | [![القائمة الرئيسية · Main menu](Media/Screenshots/01_Main_Menu.png)](Media/Screenshots/01_Main_Menu.png) |
 
-<p align="center">
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/tree/main/Media/Screenshots"><img alt="All Screenshots" src="https://img.shields.io/badge/All_Screenshots-475569?style=for-the-badge" height="28"></a>
-  &nbsp;
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/Media/Four_Stages_Comparison.png"><img alt="Stage Comparison" src="https://img.shields.io/badge/Stage_Comparison-475569?style=for-the-badge" height="28"></a>
-</p>
+[كل الصور · All screenshots](Media/Screenshots) · [مقارنة المراحل الأربع · Four-stage comparison](Media/Four_Stages_Comparison.png)
 
 ## تشغيل نسخة ويندوز · Play on Windows
 

@@ -1,11 +1,5 @@
 # Borg Asyut Game Documentation
 
-<p align="center">
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/README.md"><img alt="Project Home" src="https://img.shields.io/badge/Project_Home-24292F?style=for-the-badge&amp;logo=github&amp;logoColor=white" height="28"></a>
-  &nbsp;
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/Documentation/Final/Asyut_Game_Documentation_Final.pdf"><img alt="Documentation PDF" src="https://img.shields.io/badge/Documentation_PDF-2EA44F?style=for-the-badge&amp;logo=adobeacrobatreader&amp;logoColor=white" height="28"></a>
-</p>
-
 برج أسيوط  |  icy tower Asyut
 
 Windows x64 | Game description, assets, physics and C# implementation
