@@ -4,6 +4,8 @@
 
 <h1 align="center">برج أسيوط · icy tower Asyut</h1>
 
+<p align="center"><strong>اللي أبوه صعيدي ميخافِش</strong></p>
+
 <p align="center">
   لعبة أركيد مصرية ثنائية الأبعاد بتاخدك بين عمارات أسيوط. اطلع لأعلى دور تقدر توصله بشخصية صعيدية وسط أجواء مصرية.<br>
   An Egyptian 2D arcade tower climber set in the streets of Assiut.
@@ -58,11 +60,11 @@ https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
 
 | الزر · Key | الوظيفة · Action |
 |---|---|
-| A / D أو / or ← / → | الحركة وتجميع السرعة · Move and build momentum |
-| Space | القفز؛ اترك الزر مبكرًا لقفزة أقصر · Jump; release early for a shorter jump |
-| Escape | إيقاف مؤقت / استكمال · Pause / resume |
-| R بعد الخسارة / after Game Over | إعادة اللعب · Restart |
-| Alt + Enter | تبديل وضع العرض · Toggle display mode |
+| <kbd>A</kbd> / <kbd>D</kbd> أو / or <kbd>←</kbd> / <kbd>→</kbd> | الحركة وتجميع السرعة · Move and build momentum |
+| <kbd>Space</kbd> | القفز؛ اترك الزر مبكرًا لقفزة أقصر · Jump; release early for a shorter jump |
+| <kbd>Esc</kbd> | إيقاف مؤقت / استكمال · Pause / resume |
+| <kbd>R</kbd> بعد الخسارة / after Game Over | إعادة اللعب · Restart |
+| <kbd>Alt</kbd> + <kbd>Enter</kbd> | تبديل وضع العرض · Toggle display mode |
 
 ## صور من اللعبة · Screenshots
 
@@ -86,16 +88,51 @@ Download and extract the complete Windows ZIP, then run `icy tower Asyut.exe`. K
 
 ## فتح المشروع · Open the project
 
-1. نزّل المستودع باستخدام Git مع تثبيت Git LFS، ثم نفّذ `git lfs pull`. / Clone with Git LFS installed, then run `git lfs pull`.
-2. أضف مجلد المشروع في Unity Hub. / Add the project folder in Unity Hub.
-3. انتظر تحميل الحزم وتجهيز ملفات المشروع. / Allow packages to restore and the Library folder to regenerate.
-4. افتح `Assets/Ma3alem/Scenes/MainMenu.unity` واضغط Play. / Open `Assets/Ma3alem/Scenes/MainMenu.unity` and press Play.
+ثبّت Git وGit LFS، ثم نفّذ الأوامر التالية. / Install Git and Git LFS, then run:
+
+```bash
+git lfs install
+git clone https://github.com/mohamadhussien6/borg-Asyut.git
+cd borg-Asyut
+git lfs pull
+```
+
+1. أضف مجلد المشروع في Unity Hub وافتحه باستخدام Unity 6000.3.2f1. / Add the project folder to Unity Hub and open it with Unity 6000.3.2f1.
+2. انتظر تحميل الحزم وتجهيز ملفات المشروع. / Allow packages to restore and the Library folder to regenerate.
+3. افتح `Assets/Ma3alem/Scenes/MainMenu.unity` واضغط Play. / Open `Assets/Ma3alem/Scenes/MainMenu.unity` and press Play.
 
 ## تنظيم الملفات · Source organization
 
-السكربتات الأساسية داخل `Assets/Ma3alem/Scripts`: ‏PlayerController وPlatformSpawner وCameraFollow وScoreManager وGameManager وAudioManager وUIManager، ومعها BuildingBackdrop لعرض العمارات. المشاهد والرسومات والخطوط والصوت والـPrefabs موجودة داخل `Assets`، وإعدادات المشروع والحزم داخل `ProjectSettings` و`Packages`. الاختبارات داخل `Assets/Ma3alem/Tests`.
+| السكربت · Script | الوظيفة · Responsibility |
+|---|---|
+| [`PlayerController.cs`](Assets/Ma3alem/Scripts/Gameplay/PlayerController.cs) | الحركة والقفز والارتداد من الحيطان · Movement, jumping and wall rebounds |
+| [`PlatformSpawner.cs`](Assets/Ma3alem/Scripts/Generation/PlatformSpawner.cs) | توليد المنصات وإعادة استخدامها · Platform generation and reuse |
+| [`CameraFollow.cs`](Assets/Ma3alem/Scripts/Presentation/CameraFollow.cs) | متابعة اللاعب وضغط الكاميرا وحد السقوط · Camera tracking, upward pressure and fall boundary |
+| [`ScoreManager.cs`](Assets/Ma3alem/Scripts/Core/ScoreManager.cs) | النقاط والـ Combo وحفظ أعلى نتيجة · Score, combos and saved best score |
+| [`GameManager.cs`](Assets/Ma3alem/Scripts/Core/GameManager.cs) | حالات اللعبة والإيقاف وإعادة اللعب · Game states, pause and restart |
+| [`AudioManager.cs`](Assets/Ma3alem/Scripts/Audio/AudioManager.cs) | الموسيقى والمؤثرات والأصوات · Music, sound effects and voice |
+| [`UIManager.cs`](Assets/Ma3alem/Scripts/Presentation/UIManager.cs) | القوائم ومؤشرات اللعب · Menus and gameplay HUD |
+| [`BuildingBackdrop.cs`](Assets/Ma3alem/Scripts/Presentation/BuildingBackdrop.cs) | ضبط خلفية العمارات مع الكاميرا · Building backdrop alignment |
 
-`Assets/Ma3alem/Scripts` contains PlayerController, PlatformSpawner, CameraFollow, ScoreManager, GameManager, AudioManager and UIManager, plus the BuildingBackdrop presentation helper. Scenes, prefabs, artwork, fonts and audio remain under `Assets`; project configuration and packages are in `ProjectSettings` and `Packages`. Tests are in `Assets/Ma3alem/Tests`.
+المشاهد والرسومات والخطوط والصوت والـ Prefabs داخل `Assets`، وإعدادات المشروع والحزم داخل `ProjectSettings` و`Packages`. الاختبارات داخل `Assets/Ma3alem/Tests`.
+
+Scenes, prefabs, artwork, fonts and audio are under `Assets`; settings and packages are in `ProjectSettings` and `Packages`; tests are in `Assets/Ma3alem/Tests`.
+
+## الاختبارات · Testing
+
+| Test suite | Passed | Failed | Skipped |
+|---|---:|---:|---:|
+| Edit Mode | 23 | 0 | 0 |
+| Play Mode | 40 | 0 | 13 |
+| Total | 63 | 0 | 13 |
+
+النتائج المسجلة في آخر اختبارات الـ regression؛ الـ 13 اختبار المتخطية مخصصة لمراجعة الوسائط. / Recorded regression results; 13 explicit media/review tests were skipped. The Windows build was verified to build and launch.
+
+[تفاصيل الاختبارات · Test checklist](TESTING_CHECKLIST.md)
+
+## الفريق · Team
+
+مشروع جامعي عملي من خمسة طلاب. / A university practical project by a five-student team.
 
 ## الأصول والتراخيص · Assets and attribution
 
