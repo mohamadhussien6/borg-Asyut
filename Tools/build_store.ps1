@@ -22,7 +22,7 @@ try {
     if ((Test-Path $Output) -or (Test-Path $Artifacts)) { throw "Output already exists." }
     New-Item -ItemType Directory -Path $Output, $Artifacts | Out-Null
     $env:BORG_STORE_OUTPUT = $Output
-    python -m unittest discover -s Tools -p test_package_store.py
+    python -B -m unittest discover -s Tools -p test_package_store.py
     if ($LASTEXITCODE -ne 0) { throw "Packaging unit tests failed." }
     $Targets = if ($Target -eq "Both") { @("Windows","Web") } else { @($Target) }
     foreach ($T in $Targets) {
@@ -33,7 +33,7 @@ try {
         if ($Process.ExitCode -ne 0 -or !(Select-String -LiteralPath $Log -SimpleMatch "Store build succeeded:" -Quiet)) { throw "$T build failed; check $Log" }
         $Platform = $T.ToLowerInvariant()
         $Zip = Join-Path $Artifacts "Borg_Asyut_$T.zip"
-        python Tools/package_store.py $Platform (Join-Path $Output $T) $Zip
+        python -B Tools/package_store.py $Platform (Join-Path $Output $T) $Zip
         if ($LASTEXITCODE -ne 0) { throw "$T packaging failed." }
     }
     $Status = git status --porcelain

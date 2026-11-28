@@ -7,5 +7,5 @@ Use original gameplay only; do not stretch screenshots or invent features. Curre
 - Re-capture main menu to show Arabic developer credit. Capture fresh gameplay after successful build at 1920x1080.
 - Trailer reference: https://github.com/mohamadhussien6/borg-Asyut/releases/download/game/Borg_Asyut_Official_Trailer.mp4 (30 seconds; review name, credit and audio rights). Update title/end card with Mohamad El Hussein.
 - itch.io: prepare cover 630x500, screenshots and trailer URL, test thumbnail readability.
-- CrazyGames: separate landscape, square, portrait covers and gameplay preview video per https://docs.crazygames.com/requirements/game-covers/ . Check the portal's actual pixel requirements at submission.
+- CrazyGames: landscape 1920x1080, square 800x800, portrait 800x1200 covers. No extra text beyond the title. Submit silent gameplay previews in landscape and portrait, 15–20 seconds, up to 50 MB, per https://docs.crazygames.com/requirements/game-covers/ . Review exact requirements at submission; the existing 30-second trailer is not a compliant preview as-is.
 - Public listing should use Borg Asyut — برج أسيوط; artwork may need a branding update if Icy Tower naming has not been cleared.

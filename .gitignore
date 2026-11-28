@@ -43,3 +43,7 @@ Thumbs.db
 /Media/*.mp4
 /Documentation/Final/Evidence/
 /Documentation/Final/Cleanup_Report.json
+
+# Local Python packaging test cache
+__pycache__/
+*.py[cod]
