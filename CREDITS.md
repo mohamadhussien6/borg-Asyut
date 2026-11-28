@@ -4,7 +4,7 @@
 
 **محمد الحسين**
 
-**Mohamad Al Hussein**
+**Mohamad El Hussein**
 
 Game development · Game design · Creative direction · Concept · Production
 

@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <strong>Created by / تطوير وإخراج إبداعي:</strong> محمد الحسين · Mohamad Al Hussein
+  <strong>Created by / تطوير وإخراج إبداعي:</strong> محمد الحسين · Mohamad El Hussein
 </p>
 
 <p align="center">
@@ -106,7 +106,7 @@ The existing download predates the updated developer branding. Download and extr
 
 ## المطور · Creator
 
-**محمد الحسين — Mohamad Al Hussein**
+**محمد الحسين — Mohamad El Hussein**
 
 Game development, game design, creative direction, concept and production.
 

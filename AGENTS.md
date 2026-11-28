@@ -7,4 +7,4 @@
 - Supplied voice files are immutable; preserve original pitch, speed and performance.
 - The owner confirmed permission to distribute the selected music on 2026-11-24. Approved track: Assets/Ma3alem/Audio/Music/Selected_Music.mp3. Keep the duplicate LocalPreviewOnly folder outside source packages.
 - Read relevant scripts, scene/prefab dependencies and TASKS before editing. Distinguish actual Unity/build/native checks from static checks and human listening/playthrough.
-- Public creator branding: محمد الحسين (Mohamad Al Hussein). Keep third-party credits and licenses intact. Preserve working progress; do not replay obsolete generators.
+- Public creator branding: محمد الحسين (Mohamad El Hussein). Keep third-party credits and licenses intact. Preserve working progress; do not replay obsolete generators.
