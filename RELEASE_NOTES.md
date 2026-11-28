@@ -21,3 +21,7 @@ Four supplied wall inscriptions are baked into the permanent building texture, w
 - إيه ده يا حاج، إنت بتطلع بالتالت؟
 - ما اللي اداك يدينا برضه
 - عينك الله يعينك
+
+## Next public build (pending validation)
+
+Creator branding and public-facing materials updated for محمد الحسين محمد رمزي. Existing Windows ZIP, trailer and screenshots predate this source change. Rebuild and capture updated media before releasing.

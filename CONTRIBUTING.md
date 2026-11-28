@@ -6,4 +6,4 @@ Inspect code callers and scene/prefab references before edits. Preserve `.meta` 
 
 Use PascalCase C# types/files and scene/prefab names; camelCase fields/locals; character frames `Player_State_01.png`. Preserve the supplied voice filenames listed in the current asset inventory. Player-facing strings are logical Unicode Arabic; UIManager shapes them once before sending visual-order text to TMP. Do not reverse strings or enable a second reversal.
 
-Keep existing Git/LFS rules; audio/fonts/layered source assets use LFS, metadata remains text. Never commit Library/Temp/build folders or credentials. Changes remain local; no remote push is part of this delivery. Update TASKS and actual validation evidence after a change. Static checks do not establish runtime success.
+Keep existing Git/LFS rules; audio/fonts/layered source assets use LFS, metadata remains text. Never commit Library/Temp/build folders or credentials. Use reviewable commits and document actual validation evidence. Update TASKS and actual validation evidence after a change. Static checks do not establish runtime success.

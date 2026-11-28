@@ -188,9 +188,17 @@ namespace Ma3alem
             Button first = Button(card.transform, "العب", 120, game.Restart);
             Button(card.transform, "طريقة اللعب", 44, Help);
             Button(card.transform, "الصوت", -32, SoundPanel);
+            #if !UNITY_WEBGL || UNITY_EDITOR
             Button(card.transform, "خروج", -108, Quit);
+            #endif
             var record = Panel(card.transform, new Vector2(0, -172), new Vector2(310, 40));
             Label(record.transform, $"أعلى نتيجة: {game.Scores.Best}", Vector2.zero, 22);
+            var credit = Panel(root, new Vector2(0, -311), new Vector2(770, 48));
+            credit.raycastTarget = false;
+            var creator = Label(credit.transform, "تطوير وإخراج إبداعي: محمد الحسين محمد رمزي", Vector2.zero, 20);
+            creator.name = "Developer credit";
+            creator.rectTransform.sizeDelta = new Vector2(730, 44);
+            creator.enableAutoSizing = true; creator.fontSizeMin = 14; creator.fontSizeMax = 20;
             Select(first);
         }
 

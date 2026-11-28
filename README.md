@@ -8,6 +8,10 @@
 </p>
 
 <p align="center">
+  <strong>Created by / تطوير وإخراج إبداعي:</strong> محمد الحسين محمد رمزي · Mohamad Al Hussein Mohamad Ramzy
+</p>
+
+<p align="center">
   <strong>Engine:</strong> Unity 6000.3.2f1 · <strong>Language:</strong> C# · <strong>Platform:</strong> Windows (x64)
 </p>
 
@@ -15,8 +19,6 @@
   <a href="https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b"><img src="https://img.shields.io/badge/Watch_Trailer-94701E?style=for-the-badge&amp;logo=youtube&amp;logoColor=white" alt="Watch Trailer" height="32"></a>
   &nbsp;
   <a href="https://github.com/mohamadhussien6/borg-Asyut/releases/latest/download/Borg_Asyut_Windows.zip"><img src="https://img.shields.io/badge/Download_for_Windows_(64_MB)-94701E?style=for-the-badge&amp;logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDExdjExSDB6TTEzIDBoMTF2MTFIMTN6TTAgMTNoMTF2MTFIMHpNMTMgMTNoMTF2MTFIMTN6Ii8%2BPC9zdmc%2B" alt="Download for Windows (64 MB)" height="32"></a>
-  &nbsp;
-  <a href="https://github.com/mohamadhussien6/borg-Asyut/blob/main/Documentation/Final/Asyut_Game_Documentation_Final.pdf"><img src="https://img.shields.io/badge/Documentation_(PDF)-94701E?style=for-the-badge&amp;logo=adobeacrobatreader&amp;logoColor=white" alt="Documentation (PDF)" height="32"></a>
 </p>
 
 https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
@@ -80,7 +82,7 @@ https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
 
 حمّل ملف اللعبة وفك ضغطه بالكامل، ثم شغّل `icy tower Asyut.exe`. اترك مجلد البيانات وملف `UnityPlayer.dll` ومجلدات التشغيل بجوار الملف التنفيذي. الموسيقى المختارة والأصوات مدمجة داخل النسخة.
 
-Download and extract the complete Windows ZIP, then run `icy tower Asyut.exe`. Keep its Data directory, `UnityPlayer.dll` and runtime folders beside the executable. The selected soundtrack and voice recordings are included.
+The existing download predates the updated developer branding. Download and extract the complete Windows ZIP, then run `icy tower Asyut.exe`. Keep its Data directory, `UnityPlayer.dll` and runtime folders beside the executable. The selected soundtrack and voice recordings are included.
 
 ## فتح المشروع · Open the project
 
@@ -101,3 +103,11 @@ Download and extract the complete Windows ZIP, then run `icy tower Asyut.exe`. K
 - خطوط Lemonada وNoto مرفق بها ترخيص SIL Open Font License. / Lemonada and Noto retain their SIL Open Font License notices.
 - مكتبة RTLTMPro تحت ترخيص MIT داخل `Assets/ThirdParty`، مع الاحتفاظ بإشعارات الخطوط المرفقة. / RTLTMPro retains its MIT license under `Assets/ThirdParty`, alongside the bundled font notices.
 - الموسيقى المختارة مدمجة بإذن النشر الذي أكده صاحب المشروع. / The selected soundtrack is included with distribution permission confirmed by the project owner.
+
+## المطور · Creator
+
+**محمد الحسين محمد رمزي — Mohamad Al Hussein Mohamad Ramzy**
+
+Game development, game design, creative direction, concept and production.
+
+[Credits and third-party notices](CREDITS.md) · [Store listing](Publishing/STORE_COPY.md) · [Release preparation](Publishing/STORE_LAUNCH.md).
