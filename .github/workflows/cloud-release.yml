@@ -86,8 +86,51 @@ jobs:
           name: unity-tests
           path: cloud-tests
           retention-days: 7
-  build:
+  captures:
     needs: tests
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      checks: write
+    steps:
+      - uses: actions/checkout@v4
+        with: { lfs: true }
+      - name: Keep test-only captures inside cloud workspace
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('Assets/Ma3alem/Tests/PlayMode/GameplayTests.cs')
+          text = p.read_text(encoding='utf8')
+          assert '/../../../work/' in text
+          p.write_text(text.replace('/../../../work/', '/../cloud-captures/'), encoding='utf8')
+          PY
+      - uses: game-ci/unity-test-runner@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+        with:
+          unityVersion: ${{ env.UNITY_VERSION }}
+          testMode: PlayMode
+          coverageEnabled: false
+          artifactsPath: cloud-capture-tests
+          customParameters: '-testFilter "Ma3alem.Tests.GameplayTests.CaptureCurrentRuntimeAuditAndMeasurements;Ma3alem.Tests.GameplayTests.ArcadeWallBounceFootage;Ma3alem.Tests.GameplayTests.PolishJumpAndWallFootage;Ma3alem.Tests.GameplayTests.BuildingJoinPreview;Ma3alem.Tests.GameplayTests.StaticEnvironmentZoneScreenshots;Ma3alem.Tests.GameplayTests.PlayfieldBoundaryScreenshots;Ma3alem.Tests.GameplayTests.NeighborhoodPresentationActivePhysics;Ma3alem.Tests.GameplayTests.PolishPresentationAndFrameTimes;Ma3alem.Tests.GameplayTests.GitHubFeatureTourCapture;Ma3alem.Tests.GameplayTests.FinalGameplayVideo;Ma3alem.Tests.GameplayTests.SmallVisualFixCaptures;Ma3alem.Tests.GameplayTests.MainMenuSloganArabicCaptures;Ma3alem.Tests.GameplayTests.VisualIdentityCaptures"'
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Bound cloud evidence storage
+        if: always()
+        run: python Tools/cloud_capture_evidence.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: explicit-capture-tests
+          path: |
+            cloud-capture-tests
+            capture-evidence
+          retention-days: 1
+  build:
+    needs: [tests, captures]
     strategy:
       fail-fast: false
       max-parallel: 1
@@ -177,7 +220,7 @@ jobs:
           retention-days: 7
   draft:
     if: always()
-    needs: [source, license, tests, build, windows, browser]
+    needs: [source, license, tests, captures, build, windows, browser]
     runs-on: ubuntu-22.04
     timeout-minutes: 15
     permissions:

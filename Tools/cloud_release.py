@@ -3,11 +3,11 @@ from pathlib import Path
 import hashlib, json, os, shutil, subprocess, urllib.request, urllib.parse, zipfile
 R=Path.cwd(); A=R/'cloud-artifacts'; O=R/'cloud-delivery';O.mkdir(exist_ok=True)
 needs=json.loads(os.environ['NEEDS_JSON'])
-ready=all(needs.get(name,{}).get('result')=='success' for name in ['source','license','tests','build','windows','browser'])
+ready=all(needs.get(name,{}).get('result')=='success' for name in ['source','license','tests','captures','build','windows','browser'])
 media=A/'source-and-media/Publishing_Ready'
 if media.is_dir(): shutil.copytree(media,O/'Publishing_Ready',dirs_exist_ok=True)
 native=A/'native-tests'; browser=A/'browser-tests'
-for name in ['source-and-media','unity-tests','native-tests','browser-tests']:
+for name in ['source-and-media','unity-tests','explicit-capture-tests','native-tests','browser-tests']:
     folder=A/name
     if folder.is_dir():
         with zipfile.ZipFile(O/(name+'.zip'),'w',zipfile.ZIP_DEFLATED) as z:
@@ -33,7 +33,7 @@ if needs.get('build',{}).get('result')=='success':
         if platform=='CrazyGames' and not limit['crazygames_total_50MB']:
             status='BLOCKED: measured total Web size exceeds 50 MB without SDK; optimize before CrazyGames submission.'
         (dest.parent/'STATUS.md').write_text(status+'\n',encoding='utf8')
-summary={'commit':os.environ['GITHUB_SHA'],'unity_configured':'6000.3.29f1','run_url':os.environ['GITHUB_SERVER_URL']+'/'+os.environ['GITHUB_REPOSITORY']+'/actions/runs/'+os.environ['GITHUB_RUN_ID'],'jobs':{k:v.get('result') for k,v in needs.items()},'automated_cloud_checks_passed':ready,'public_launch_approved':False,'browser_scope':'Startup and input smoke with screenshot evidence, not human visual/audio approval.','explicit_media_tests':'Unity default All does not execute Explicit capture tests; skipped XML cases remain skipped.'}
+summary={'commit':os.environ['GITHUB_SHA'],'unity_configured':'6000.3.29f1','run_url':os.environ['GITHUB_SERVER_URL']+'/'+os.environ['GITHUB_REPOSITORY']+'/actions/runs/'+os.environ['GITHUB_RUN_ID'],'jobs':{k:v.get('result') for k,v in needs.items()},'automated_cloud_checks_passed':ready,'public_launch_approved':False,'browser_scope':'Startup and input smoke with screenshot evidence, not human visual/audio approval.','explicit_media_tests':'Separate captures job explicitly selects 13 opt-in capture cases; any genuinely unavailable local-only recording case remains skipped in XML.'}
 (O/'CLOUD_STATUS.json').write_text(json.dumps(summary,indent=2)+'\n')
 kit=O/'Publishing_Ready'
 if kit.is_dir():

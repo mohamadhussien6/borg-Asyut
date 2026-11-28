@@ -13,6 +13,8 @@ const fs = require('node:fs/promises');
       let transferred = 0;
       page.on('response', async response => { transferred += Number(response.headers()['content-length'] || 0); });
       page.on('pageerror', error => errors.push(error.message));
+      page.on('console', message => { if(message.type()==='error') errors.push('console: '+message.text()); });
+      page.on('requestfailed', request => { if(request.url().includes('/Build/')) errors.push('runtime request failed: '+request.url()); });
       await page.goto('http://127.0.0.1:8765', { waitUntil:'domcontentloaded' });
       await page.waitForFunction(() => {
         const bar = document.querySelector('#unity-loading-bar');
