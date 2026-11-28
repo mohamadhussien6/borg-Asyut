@@ -111,3 +111,7 @@ The existing download predates the updated developer branding. Download and extr
 Game development, game design, creative direction, concept and production.
 
 [Credits and third-party notices](CREDITS.md) · [Store listing](Publishing/STORE_COPY.md) · [Release preparation](Publishing/STORE_LAUNCH.md).
+
+## Store release workflow
+
+Build Windows and browser packages from a clean checkout with `Tools/build_store.ps1`. See [launch checklist](Publishing/LAUNCH_GATE.md) and [media plan](Publishing/MEDIA_PLAN.md). The new player binaries and promotional media still require a fresh build and manual validation.

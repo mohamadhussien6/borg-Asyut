@@ -1,20 +1,33 @@
-# Public launch preparation
+# Borg Asyut — release workflow
 
-Creator: محمد الحسين (Mohamad El Hussein). Proposed storefront name: Borg Asyut — برج أسيوط. Current in-game subtitle still contains "icy tower Asyut"; review branding clearance before public distribution.
+Creator: محمد الحسين / Mohamad El Hussein. This is a source-level preparation, not an already validated new game build. Existing Windows ZIP and promotional media predate the updated credit.
 
-## Release gates
-- Confirm all contributor and third-party permissions and required credits; retain soundtrack distribution evidence. Public repository access is not an open-source license.
-- Rebuild using Unity 6000.3.2f1 with Git LFS assets restored. Existing Windows download predates the new creator credit. Changing Unity company name changes the default PlayerPrefs storage location; test and decide whether to migrate old scores before launch.
-- Run Edit/Play Mode regression tests and fresh Windows launch; inspect the Arabic creator label at different screen sizes. Historical results (23 Edit Mode / 40 Play Mode passed, 13 skipped) do not establish new build success.
-- Build WebGL separately with Web support, gzip plus decompression fallback, and root index.html. Test browser audio unlock, keyboard focus, fullscreen, pausing and local scores in a real embed. WebGL support is not yet verified.
-- Package complete Windows runtime (exe, matching Data directory, UnityPlayer.dll and remaining runtime files) and license notices; use clean ZIP and SHA-256 checksum. Web ZIP must contain index.html at its root.
-- Remove the academic PDF from the existing public release through GitHub release asset management; it remains attached until removed. Do not rewrite Git history. Rebuild screenshots and trailer to reflect the new credit, then create a versioned release with tested ZIPs.
-- Inspect telemetry and privacy; existing ProjectSettings includes submitAnalytics: 1. Do not assert no data collection without verification.
+## One-command build (Windows)
+1. Use a clean Git clone with Git LFS, Python 3.11+ and Unity Hub editor 6000.3.2f1, including Windows and Web Build Support. Disable Development Build in Unity; close the editor.
+2. In PowerShell run:
 
-## Store order
-1. itch.io: Windows ZIP first, HTML5 draft after browser QA. https://itch.io/game/new
-2. Game Jolt: Windows build and HTML5 package after testing. https://gamejolt.com/
-3. CrazyGames and Poki: separate browser submission, SDK and portal-specific review. https://developer.crazygames.com/ and https://developers.poki.com/
-4. Steam: optional later after onboarding, fee and store/build review. https://partner.steamgames.com/steamdirect
+```powershell
+git pull --ff-only
+git lfs pull
+powershell -NoProfile -ExecutionPolicy Bypass -File Tools/build_store.ps1 -Target Both
+```
 
-Use [store copy](STORE_COPY.md), real gameplay images and official trailer; refresh media after new build. Pricing and public store publication require creator approval. No new binaries or public store pages have been produced by these source changes.
+Use `-Target Windows` or `-Target Web` independently; pass `-Unity "C:\path\Unity.exe"` if needed. The script makes a new timestamped build directory, validates LFS, runs packaging unit tests, builds target(s), produces ZIPs, hashes, build logs and source commit in Artifacts/Store-*. ExecutionPolicy applies only to the subprocess; review the script before running it.
+
+Alternatively switch Unity Build Profiles to the intended target and choose Ma3alem > Store Release > Build Windows x64 / Build WebGL. Output is Builds/Store unless BORG_STORE_OUTPUT is provided. Use empty output directories. Package with:
+
+```
+python Tools/package_store.py windows Builds/Store/Windows Artifacts/Borg_Asyut_Windows.zip
+python Tools/package_store.py web Builds/Store/Web Artifacts/Borg_Asyut_Web.zip
+```
+
+ZIPs include credits and license notices. Web index.html is at archive root. Do not upload source, checksums or logs as playable games. Check [LAUNCH_GATE.md](LAUNCH_GATE.md) first. Preview Web on HTTP, not file:// (python -m http.server 8000 --directory <web-folder>). The generic Web build is not a portal SDK integration.
+
+## Upload order
+- itch.io: https://itch.io/game/new — first downloadable Windows; then HTML project with Web ZIP marked playable in browser and Windows separately downloadable. Start with 1280x720 embed; test fullscreen. https://itch.io/docs/creators/html5 and https://itch.io/docs/creators/getting-started
+- Game Jolt: https://gamejolt.com/ — game page, separate Windows and HTML5 builds, publish only after preview and rating.
+- CrazyGames: https://developer.crazygames.com/ — initial download <= 50 MB for basic launch; measure actual network transfer; full launch requires SDK. Read https://docs.crazygames.com/requirements/intro/ and https://docs.crazygames.com/requirements/game-covers/
+- Poki: https://developers.poki.com/guide/share — review before integration. Read https://developers.poki.com/guide/requirements-quality and https://developers.poki.com/guide/revenue-deal-types before agreeing to any exclusivity.
+- Steam: https://partner.steamgames.com/steamdirect — optional later.
+
+See [store copy](STORE_COPY.md) and [media plan](MEDIA_PLAN.md). Proposed price: free/optional donations on itch.io, subject to creator approval. The old academic PDF is still attached to the existing GitHub Release: remove that asset through the GitHub web UI. Do not delete playable Windows ZIP before its tested replacement is available. New builds and public store pages have not been created by the source update.
