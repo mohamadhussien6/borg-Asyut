@@ -1,6 +1,6 @@
 # Borg Asyut — برج أسيوط
 
-**Developer / Creative Director:** محمد الحسين محمد رمزي (Mohamad Al Hussein Mohamad Ramzy)
+**Developer / Creative Director:** محمد الحسين (Mohamad Al Hussein)
 
 **Genre:** 2D arcade / endless platformer / single-player
 
@@ -14,14 +14,14 @@ The chase is on! A man from Upper Egypt gets caught up in an artifact-smuggling 
 
 Build momentum, bounce off walls, skip floors and chain combos. Survive the rising camera across four connected height zones, with Egyptian Arabic menus, Saidi voices and a locally saved personal high score.
 
-Created by Mohamad Al Hussein Mohamad Ramzy — game development, game design, creative direction and production.
+Created by Mohamad Al Hussein — game development, game design, creative direction and production.
 
 ## وصف اللعبة
 الحكاية بدأت لما واحد صعيدي سبق شوية بلطجية وسرق منهم قطعة آثار كانوا بيجهزوها للتهريب. لما اتقفش، مابقاش قدامه غير إنه يطلع عالعمارات! اجمع سرعة، اقفز، ارتد من الحيطان واعمل كومبوهات قبل ما الكاميرا تلحقك. أربع مراحل متصلة، وأعلى نتيجة بتتحفظ تلقائيًا.
 
 اللي أبوه صعيدي ميخافِش!
 
-تطوير وتصميم وإخراج إبداعي: محمد الحسين محمد رمزي.
+تطوير وتصميم وإخراج إبداعي: محمد الحسين.
 
 ## Controls
 A/D or arrows: move; Space: jump; Escape: pause/resume; R: restart after game over. Windows: Alt+Enter toggles display mode.

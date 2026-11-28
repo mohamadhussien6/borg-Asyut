@@ -24,4 +24,4 @@ Four supplied wall inscriptions are baked into the permanent building texture, w
 
 ## Next public build (pending validation)
 
-Creator branding and public-facing materials updated for محمد الحسين محمد رمزي. Existing Windows ZIP, trailer and screenshots predate this source change. Rebuild and capture updated media before releasing.
+Creator branding and public-facing materials updated for محمد الحسين. Existing Windows ZIP, trailer and screenshots predate this source change. Rebuild and capture updated media before releasing.

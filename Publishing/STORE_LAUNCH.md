@@ -1,6 +1,6 @@
 # Public launch preparation
 
-Creator: محمد الحسين محمد رمزي (Mohamad Al Hussein Mohamad Ramzy). Proposed storefront name: Borg Asyut — برج أسيوط. Current in-game subtitle still contains "icy tower Asyut"; review branding clearance before public distribution.
+Creator: محمد الحسين (Mohamad Al Hussein). Proposed storefront name: Borg Asyut — برج أسيوط. Current in-game subtitle still contains "icy tower Asyut"; review branding clearance before public distribution.
 
 ## Release gates
 - Confirm all contributor and third-party permissions and required credits; retain soundtrack distribution evidence. Public repository access is not an open-source license.

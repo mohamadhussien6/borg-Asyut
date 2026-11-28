@@ -634,7 +634,7 @@ namespace Ma3alem.Editor
         {
             Validate();
             PlayerSettings.productName = GameManager.OfficialTitle;
-            PlayerSettings.companyName = verification && isolatedPreferences ? "Mohamad Al Hussein Mohamad Ramzy Verification" : "Mohamad Al Hussein Mohamad Ramzy";
+            PlayerSettings.companyName = verification && isolatedPreferences ? "Mohamad Al Hussein Verification" : "Mohamad Al Hussein";
             PlayerSettings.defaultScreenWidth = 1280; PlayerSettings.defaultScreenHeight = 720;
             PlayerSettings.fullScreenMode = FullScreenMode.Windowed;
             PlayerSettings.SetScriptingBackend(NamedBuildTarget.Standalone, ScriptingImplementation.Mono2x);

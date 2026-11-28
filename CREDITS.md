@@ -2,9 +2,9 @@
 
 ## Creator / المطور
 
-**محمد الحسين محمد رمزي**
+**محمد الحسين**
 
-**Mohamad Al Hussein Mohamad Ramzy**
+**Mohamad Al Hussein**
 
 Game development · Game design · Creative direction · Concept · Production
 

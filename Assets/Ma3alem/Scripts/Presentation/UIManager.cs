@@ -195,7 +195,7 @@ namespace Ma3alem
             Label(record.transform, $"أعلى نتيجة: {game.Scores.Best}", Vector2.zero, 22);
             var credit = Panel(root, new Vector2(0, -311), new Vector2(770, 48));
             credit.raycastTarget = false;
-            var creator = Label(credit.transform, "تطوير وإخراج إبداعي: محمد الحسين محمد رمزي", Vector2.zero, 20);
+            var creator = Label(credit.transform, "تطوير وإخراج إبداعي: محمد الحسين", Vector2.zero, 20);
             creator.name = "Developer credit";
             creator.rectTransform.sizeDelta = new Vector2(730, 44);
             creator.enableAutoSizing = true; creator.fontSizeMin = 14; creator.fontSizeMax = 20;
