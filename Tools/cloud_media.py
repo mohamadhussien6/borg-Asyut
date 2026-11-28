@@ -2,6 +2,7 @@
 from pathlib import Path
 from PIL import Image, ImageOps, ImageDraw, ImageFont
 import hashlib, json, shutil, subprocess, urllib.request
+import imageio_ffmpeg
 R=Path.cwd()
 O=R/'Publishing_Ready'
 A=R/'Assets/Ma3alem/Art'
@@ -33,10 +34,14 @@ trailer=R/'cloud-trailer-source.mp4'
 with urllib.request.urlopen('https://github.com/mohamadhussien6/borg-Asyut/releases/download/game/Borg_Asyut_Official_Trailer.mp4',timeout=90) as response:
     trailer.write_bytes(response.read())
 def ffmpeg(args,out):
-    subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y',*args,'-map_metadata','-1','-c:v','libx264','-threads','2','-preset','fast','-crf','22','-pix_fmt','yuv420p','-movflags','+faststart',str(out)],check=True)
+    subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(),'-hide_banner','-loglevel','error','-y',*args,'-map_metadata','-1','-c:v','libx264','-threads','2','-preset','fast','-crf','22','-pix_fmt','yuv420p','-movflags','+faststart',str(out)],check=True)
 ffmpeg(['-i',str(trailer),'-loop','1','-framerate','60','-i',str(shared/'Trailer_End_Card.png'),'-filter_complex','[0:v]trim=duration=26,setpts=PTS-STARTPTS,setsar=1[a];[1:v]trim=duration=4,setpts=PTS-STARTPTS,setsar=1[b];[a][b]concat=n=2:v=1:a=0[v]','-map','[v]','-map','0:a?','-c:a','aac','-t','30','-r','60'],shared/'Borg_Asyut_Trailer_30s.mp4')
-for name,filter in [('Landscape','scale=1920:1080'),('Portrait','crop=720:1080:600:0,scale=1080:1620')]:
-    ffmpeg(['-i',str(trailer),'-t','18','-vf',filter,'-an','-r','60'],O/'CrazyGames'/('Preview_'+name+'_18s.mp4'))
+for name,filter,cover,scale in [('Landscape','scale=1920:1080','Landscape_1920x1080.png','1920:1080'),('Portrait','crop=720:1080:600:0,scale=1080:1620','Portrait_800x1200.png','1080:1620')]:
+    graph=f'[1:v]scale={scale},trim=duration=0.033333,setpts=PTS-STARTPTS,fps=60,setsar=1[a];[0:v]trim=duration=17.966667,setpts=PTS-STARTPTS,{filter},fps=60,setsar=1[b];[a][b]concat=n=2:v=1:a=0[v]'
+    output=O/'CrazyGames'/('Preview_'+name+'_18s.mp4')
+    ffmpeg(['-i',str(trailer),'-loop','1','-framerate','60','-i',str(O/'CrazyGames/Artwork'/cover),'-filter_complex',graph,'-map','[v]','-an','-t','18','-r','60'],output)
+for video in O.rglob('*.mp4'):
+    subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(),'-v','error','-i',str(video),'-f','null','-'],check=True,stdout=subprocess.DEVNULL)
 (shared/'PROVENANCE.md').write_text('Original owner logo copied byte-for-byte and README retained. Covers use existing game art, not invented gameplay. Numbered screenshots and trailer gameplay are prior-build captures. Trailer closing card is newly composed with creator credit. Portal previews are silent real-time crops; review framing and matching first-cover frames before submission. These are not fresh patched-build captures.\n',encoding='utf8')
 manifest={p.relative_to(O).as_posix():{'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in O.rglob('*') if p.is_file()}
 (shared/'MEDIA_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf8')

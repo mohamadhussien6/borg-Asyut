@@ -29,10 +29,12 @@ jobs:
           python -B -m unittest discover -s Tools -p 'test_*.py' -v
           python -B Tools/validate_project.py
           dotnet run --project Tools/LogicChecks/LogicChecks.csproj -- .
-          python -m pip install Pillow
-          python Tools/cloud_media.py
           mkdir -p cloud-reports
           cp Documentation/*Validation.json cloud-reports/
+          python -m py_compile Tools/cloud_media.py Tools/cloud_release.py
+          node --check Tools/cloud_browser.cjs
+          python -m pip install Pillow imageio-ffmpeg
+          python Tools/cloud_media.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
