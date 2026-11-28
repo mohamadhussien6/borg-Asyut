@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Media/Branding/Borg_Asyut_Header.png" alt="Borg Asyut — برج أسيوط" width="800">
+  <img src="Media/Weathered%20Asyut%20Tower%20Sign%20Duo.png" alt="Borg Asyut — برج أسيوط" width="800">
 </p>
 
 <p align="center">
