@@ -114,7 +114,7 @@ namespace Ma3alem
             var label = Rect("Arabic label", parent, position, new Vector2(640, size * 2.5f)).gameObject.AddComponent<TextMeshProUGUI>();
             label.font = font; label.fontSize = size; label.alignment = TextAlignmentOptions.Center;
             label.color = Ink; label.raycastTarget = false; label.richText = false;
-            label.enableWordWrapping = false;
+            label.textWrappingMode = TextWrappingModes.NoWrap;
             SetText(label, caption);
             return label;
         }

@@ -21,3 +21,9 @@ The pre-export hook enforces the pinned editor, identity and approved-music excl
 Review usage/free quota before starting builds. A successful export alone is insufficient: inspect test results and run native/browser QA. No public sharing, release publishing, fees or storefront upload is enabled by these hooks.
 
 Official reference: https://docs.unity.com/en-us/build-automation/advanced-build-configuration/run-custom-scripts-during-the-build-process and https://docs.unity.com/en-us/build-automation/reference/unit-tests
+
+## Build 1 diagnosis — 2026-11-28
+
+Owner-supplied full log confirms checkout 95e8841967d2a180113dfa64f76923b635a10942, but actual engine 6000.6.10f1 despite ProjectVersion.txt specifying 6000.3.29f1. Both EditMode and PlayMode stopped during compilation at UIManager.cs:117 (CS0619, obsolete TMP_Text.enableWordWrapping). No test pass or player export is established by this run. Replaced the obsolete property with textWrappingMode = TextWrappingModes.NoWrap, preserving single-line layout.
+
+Before retrying in the dashboard, explicitly select Unity 6000.3.29f1 on this build target, save it, and confirm the next log reports Initialize engine version: 6000.3.29f1. Do not select Latest or 6000.6. The pre-export version guard remains enabled. Keep failed-test-fails-build enabled. Retry must use the newest codex/cloud-release commit. This source fix still requires cloud compilation and tests; it is not a passing result.
