@@ -17,15 +17,15 @@ class StorePackagingTests(unittest.TestCase):
     def test_windows(self):
         src = self.root / "Windows"
         src.mkdir()
-        for name in ("icy tower Asyut.exe", "UnityPlayer.dll", "debug.pdb"):
+        for name in ("Borg Asyut.exe", "UnityPlayer.dll", "debug.pdb"):
             (src / name).write_bytes(b"fixture")
-        data = src / "icy tower Asyut_Data"
+        data = src / "Borg Asyut_Data"
         data.mkdir()
         (data / "globalgamemanagers").write_bytes(b"fixture")
         output = self.root / "Windows.zip"
         package("windows", src, output, self.root)
         with zipfile.ZipFile(output) as z:
-            self.assertIn("icy tower Asyut.exe", z.namelist())
+            self.assertIn("Borg Asyut.exe", z.namelist())
             self.assertIn("Third_Party_Notices/CREDITS.md", z.namelist())
             self.assertNotIn("debug.pdb", z.namelist())
         self.assertTrue(output.with_suffix(".zip.sha256").is_file())
@@ -50,6 +50,16 @@ class StorePackagingTests(unittest.TestCase):
             package("web", src, self.root / "bad.zip", self.root)
         with self.assertRaises(ValueError):
             package("windows", src, self.root / "bad.zip", self.root)
+
+    def test_rejects_unknown_platform(self):
+        src = self.root / "Web"
+        build = src / "Build"
+        build.mkdir(parents=True)
+        (src / "index.html").write_text("fixture")
+        for suffix in (".loader.js", ".framework.js", ".wasm", ".data"):
+            (build / ("Web" + suffix)).write_bytes(b"fixture")
+        with self.assertRaisesRegex(ValueError, "platform"):
+            package("android", src, self.root / "bad.zip", self.root)
 
 if __name__ == "__main__":
     unittest.main()

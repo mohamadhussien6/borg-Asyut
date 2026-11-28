@@ -1,11 +1,9 @@
-# Store media kit plan
+# Store media provenance
 
-Use original gameplay only; do not stretch screenshots or invent features. Current assets are reference material, not updated branding exports.
+Prepared platform covers and announcements use the actual game background and player sprite. They are promotional compositions, not gameplay screenshots. No generated replacement art was introduced.
 
-- [Existing logo](../Media/Weathered%20Asyut%20Tower%20Sign%20Duo.png): check English name and third-party branding clearance.
-- [Stage 1](../Media/Screenshots/03_Stage_1.png), [Stage 3](../Media/Screenshots/05_Stage_3.png), [Stage 4](../Media/Screenshots/06_Stage_4.png), [High jump](../Media/Screenshots/07_High_Jump_Flip.png), [Wall bounce](../Media/Screenshots/08_Wall_Bounce.png), [Combo](../Media/Screenshots/09_Combo_High_Score.png).
-- Re-capture main menu to show Arabic developer credit. Capture fresh gameplay after successful build at 1920x1080.
-- Trailer reference: https://github.com/mohamadhussien6/borg-Asyut/releases/download/game/Borg_Asyut_Official_Trailer.mp4 (30 seconds; review name, credit and audio rights). Update title/end card with Mohamad El Hussein.
-- itch.io: prepare cover 630x500, screenshots and trailer URL, test thumbnail readability.
-- CrazyGames: landscape 1920x1080, square 800x800, portrait 800x1200 covers. No extra text beyond the title. Submit silent gameplay previews in landscape and portrait, 15–20 seconds, up to 50 MB, per https://docs.crazygames.com/requirements/game-covers/ . Review exact requirements at submission; the existing 30-second trailer is not a compliant preview as-is.
-- Public listing should use Borg Asyut — برج أسيوط; artwork may need a branding update if Icy Tower naming has not been cleared.
+Historical gameplay captures remain unchanged under Media/Screenshots. New native Windows test captures, media exports and their exact provenance are collected in Publishing_Ready.
+
+The previous trailer is a source of real gameplay footage; its outdated menu must be replaced with final branding and credit before reuse. Separate portal previews must meet current duration, mute and crop requirements.
+
+See [platform requirements](PLATFORM_REQUIREMENTS.md) for official sources and current dimensions. Do not put creator roles on CrazyGames/Steam capsules; use the listing, credits and general announcement instead.

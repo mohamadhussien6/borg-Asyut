@@ -249,10 +249,10 @@ namespace Ma3alem.Editor
         }
         [MenuItem("Ma3alem/Build NEW arcade Windows")]
         public static void BuildArcadeWindows()
-        { BuildAt(ArcadeFolder + "/Windows/icy tower Asyut.exe", true, false); }
+        { BuildAt(ArcadeFolder + "/Windows/Borg Asyut.exe", true, false); }
         [MenuItem("Ma3alem/Build NEW arcade authorized local preview")]
         public static void BuildArcadeLocalPreview()
-        { BuildLocalPreviewAt(ArcadeFolder + "/LocalPreview/icy tower Asyut.exe", true); }
+        { BuildLocalPreviewAt(ArcadeFolder + "/LocalPreview/Borg Asyut.exe", true); }
         static ProjectTools()
         {
             EditorApplication.delayCall += RebuildVoices;
@@ -591,16 +591,16 @@ namespace Ma3alem.Editor
         [MenuItem("Ma3alem/Build Windows x64")]
         public static void BuildWindows()
         {
-            BuildAt("Builds/Windows/icy tower Asyut.exe");
+            BuildAt("Builds/Windows/Borg Asyut.exe");
         }
 
         [MenuItem("Ma3alem/Build local preview with supplied music")]
         public static void BuildLocalPreview()
-        { BuildLocalPreviewAt("Builds/LocalPreview/icy tower Asyut.exe"); }
+        { BuildLocalPreviewAt("Builds/LocalPreview/Borg Asyut.exe"); }
 
         [MenuItem("Ma3alem/Build neighborhood local comparison")]
         public static void BuildNeighborhoodLocalPreview()
-        { BuildLocalPreviewAt("Builds/NeighborhoodLocal/icy tower Asyut.exe"); }
+        { BuildLocalPreviewAt("Builds/NeighborhoodLocal/Borg Asyut.exe"); }
 
         private static void BuildLocalPreviewAt(string output, bool reviewDriver = false)
         {
@@ -626,7 +626,7 @@ namespace Ma3alem.Editor
         public static void BuildVerificationWindows()
         {
             string company = PlayerSettings.companyName;
-            try { BuildAt("Builds/Verification/icy tower Asyut.exe", true); }
+            try { BuildAt("Builds/Verification/Borg Asyut.exe", true); }
             finally { PlayerSettings.companyName = company; AssetDatabase.SaveAssets(); }
         }
 

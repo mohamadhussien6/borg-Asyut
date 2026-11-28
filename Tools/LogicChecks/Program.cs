@@ -7,6 +7,13 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 string root = Path.GetFullPath(args[0]);
 var sources = new List<SyntaxTree>();
 var options = new CSharpParseOptions(LanguageVersion.CSharp9);
+// Only these two scalar Unity helpers are needed by the extracted difficulty rule.
+// This adapter does not validate Unity's engine, rendering or physics.
+sources.Add(CSharpSyntaxTree.ParseText(@"
+internal static class Mathf {
+    public static float Lerp(float a, float b, float t) => a + (b - a) * System.Math.Clamp(t, 0f, 1f);
+    public static float InverseLerp(float a, float b, float value) => a == b ? 0f : System.Math.Clamp((value - a) / (b - a), 0f, 1f);
+}", options));
 var targets = new Dictionary<string, string[]> {
     ["PlayerController"] = new[] { "JumpTiming" }, ["ScoreManager"] = new[] { "HeightTracker", "FloorCombo" },
     ["PlatformSpawner"] = new[] { "Difficulty", "Placement", "Route" }, ["AudioManager"] = new[] { "VoiceCue", "VoicePolicy" }

@@ -19,7 +19,7 @@ namespace Ma3alem
         public GameState State { get; private set; }
         public bool IsRunning => State == GameState.Running;
         public ScoreManager Scores => scores;
-        public const string OfficialTitle = "برج أسيوط (icy tower Asyut)";
+        public const string OfficialTitle = "Borg Asyut";
         public CameraFollow Follow => cameraFollow;
         public PlayerController Player => player;
         public float[] ZoneStarts => zoneStarts;

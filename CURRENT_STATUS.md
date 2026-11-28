@@ -1,13 +1,10 @@
-# Current project status
+# Current project status — 2026-11-28
 
-Final stages: بلكونة بنت الجيران (1–25), لحن الموزايكو (26–55), سوبر لوكس (56–90), and توت عنخ هموت (91+). Announcements remain three gameplay seconds. Both scenes use floor starts 0, 26, 56 and 91; artwork selection uses the same configuration.
+Borg Asyut — برج أسيوط. Developer: Mohamad El Hussein — محمد الحسين.
+Game Creator, Game Designer, Programmer, Creative Director & Producer.
 
-Route difficulty and camera pressure increase with global floor progress. Stage width factors interpolate continuously between existing endpoints rather than stepping abruptly at a transition. Player physics, movement, wall rebounds, scoring, combos, platform art, collision settings and audio are preserved.
+Fresh source and Unity results, exercised native paths and remaining blockers are recorded in [Publishing/VERIFICATION.md](Publishing/VERIFICATION.md). These supersede earlier preparation summaries; historical passing results are not reused as evidence.
 
-Regression results: 23 Edit Mode tests passed; 40 Play Mode tests passed; zero failures. Thirteen explicit capture/review tests were skipped. Boundary cases include floors 25, 26, 55, 56, 90 and 91. The native automated gameplay run covered all four stages with real input and physics. The standalone Windows build was launched successfully and contains no optional verification driver.
+Approved Egyptian art, eight runtime scripts, voice/music bytes, physics and scoring are preserved. Four continuous zones retain floor ranges 1–25, 26–55, 56–90 and 91+.
 
-The selected music is embedded with owner-confirmed distribution permission. Earlier owner acceptance applies to the prior download; no new human play/listening review is claimed for this stage-range update.
-
-Promotional media uses actual gameplay with the final names and ranges. The trailer remains 30 seconds at 1920 x 1080 and 60 FPS, ending on the original main menu for four seconds. Fifteen screenshots and the four-stage comparison are retained. The GitHub page is Arabic and English.
-
-Four supplied wall inscriptions are baked into the existing background texture. Pixel changes are restricted to four wall regions; the environment sprite metadata and alpha channel are unchanged.
+Windows is a private review candidate. WebGL has not been built because support is absent; available disk space prevents installing the patched editor plus module. Installed Unity 6000.3.2f1 predates reviewed security fixes. No public launch occurred. Previous playable GitHub archive is retained; its academic PDF attachment was removed.

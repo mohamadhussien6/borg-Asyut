@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Media/Weathered%20Asyut%20Tower%20Sign%20Duo.png" alt="برج أسيوط · icy tower Asyut — اللي أبوه صعيدي ميخافِش!" width="800">
+  <img src="Media/Branding/Borg_Asyut_Header.png" alt="Borg Asyut — برج أسيوط" width="800">
 </p>
 
 <p align="center">
@@ -8,7 +8,8 @@
 </p>
 
 <p align="center">
-  <strong>Created by / تطوير وإخراج إبداعي:</strong> محمد الحسين · Mohamad El Hussein
+  <strong>Developer:</strong> Mohamad El Hussein — محمد الحسين<br>
+  Game Creator, Game Designer, Programmer, Creative Director &amp; Producer
 </p>
 
 <p align="center">
@@ -80,9 +81,9 @@ https://github.com/user-attachments/assets/f6ad54ed-5cd2-418e-8377-16f50c50745b
 
 ## تشغيل نسخة ويندوز · Play on Windows
 
-حمّل ملف اللعبة وفك ضغطه بالكامل، ثم شغّل `icy tower Asyut.exe`. اترك مجلد البيانات وملف `UnityPlayer.dll` ومجلدات التشغيل بجوار الملف التنفيذي. الموسيقى المختارة والأصوات مدمجة داخل النسخة.
+اسم الملف التنفيذي في النسخ الجديدة هو `Borg Asyut.exe`. فك الأرشيف بالكامل واترك مجلد البيانات وملف `UnityPlayer.dll` بجواره. رابط التنزيل القديم محفوظ لحين توفير بديل مختبر؛ محتواه يسبق تحديث الهوية الحالي.
 
-The existing download predates the updated developer branding. Download and extract the complete Windows ZIP, then run `icy tower Asyut.exe`. Keep its Data directory, `UnityPlayer.dll` and runtime folders beside the executable. The selected soundtrack and voice recordings are included.
+New builds use `Borg Asyut.exe`. Keep the matching Data directory, `UnityPlayer.dll` and runtime folders beside it. The existing public download is retained as an archive until a tested replacement can be approved; it predates this branding update.
 
 ## فتح المشروع · Open the project
 
@@ -108,10 +109,10 @@ The existing download predates the updated developer branding. Download and extr
 
 **محمد الحسين — Mohamad El Hussein**
 
-Game development, game design, creative direction, concept and production.
+Game Creator, Game Designer, Programmer, Creative Director & Producer.
 
 [Credits and third-party notices](CREDITS.md) · [Store listing](Publishing/STORE_COPY.md) · [Release preparation](Publishing/STORE_LAUNCH.md).
 
 ## Store release workflow
 
-Build Windows and browser packages from a clean checkout with `Tools/build_store.ps1`. See [launch checklist](Publishing/LAUNCH_GATE.md) and [media plan](Publishing/MEDIA_PLAN.md). The new player binaries and promotional media still require a fresh build and manual validation.
+Build Windows and browser packages from a clean checkout with `Tools/build_store.ps1`. See [verification](Publishing/VERIFICATION.md), [platform requirements](Publishing/PLATFORM_REQUIREMENTS.md), [rights and privacy review](Publishing/RIGHTS_PRIVACY_REVIEW.md), and [launch checklist](Publishing/LAUNCH_GATE.md). Official publication requires a patched Unity editor, final player QA and owner approval. WebGL is a target, not a verified available download.

@@ -6,9 +6,9 @@
 
 **Mohamad El Hussein**
 
-Game development · Game design · Creative direction · Concept · Production
+Developer · Game Creator, Game Designer, Programmer, Creative Director & Producer
 
-تطوير اللعبة · تصميم اللعبة · الإخراج الإبداعي · الفكرة · الإنتاج
+مبتكر اللعبة · مصمم اللعبة · المبرمج · المخرج الإبداعي والمنتج
 
 ## Third-party assets and acknowledgements
 

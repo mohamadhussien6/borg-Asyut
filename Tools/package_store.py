@@ -15,11 +15,13 @@ NOTICES = {
 }
 
 def package(platform, source, output, root=ROOT):
+    if platform not in {"windows", "web"}:
+        raise ValueError("Unsupported platform: " + platform)
     source, output = source.resolve(), output.resolve()
     if not source.is_dir() or source == output or source in output.parents:
         raise ValueError("Use an existing build folder and an output ZIP outside it.")
     if platform == "windows":
-        exe = source / "icy tower Asyut.exe"
+        exe = source / "Borg Asyut.exe"
         if not exe.is_file() or not (source / (exe.stem + "_Data")).is_dir() or not (source / "UnityPlayer.dll").is_file():
             raise ValueError("Incomplete Windows player: exe, matching Data directory and UnityPlayer.dll required.")
     else:

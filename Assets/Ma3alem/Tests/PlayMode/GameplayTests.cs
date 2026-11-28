@@ -289,7 +289,7 @@ namespace Ma3alem.Tests
             var canvas = GameObject.Find("Arabic interface");
             Assert.That(canvas.transform.Find("Menu rooftop ledge"), Is.Null);
             Assert.That(canvas.transform.Find("Egyptian menu rooftop"), Is.Null);
-            var buttons = canvas.GetComponentsInChildren<Button>();
+            var buttons = canvas.transform.Find("Menu buttons").GetComponentsInChildren<Button>();
             Assert.That(buttons.Length, Is.EqualTo(4));
             foreach (var button in buttons) Assert.That(button.GetComponent<Image>().sprite.name, Is.EqualTo("Button"));
             Assert.That(canvas.transform.Find("Assiut rooftop sign").GetComponent<Image>().sprite.name, Is.EqualTo("Button"));
@@ -306,13 +306,35 @@ namespace Ma3alem.Tests
             var back = canvas.GetComponentsInChildren<Button>()[0];
             UnityEngine.EventSystems.ExecuteEvents.Execute(back.gameObject, pointer, UnityEngine.EventSystems.ExecuteEvents.pointerClickHandler);
             yield return null; yield return null;
-            buttons = canvas.GetComponentsInChildren<Button>();
+            buttons = canvas.transform.Find("Menu buttons").GetComponentsInChildren<Button>();
             Assert.That(buttons.Length, Is.EqualTo(4));
             events.SetSelectedGameObject(buttons[0].gameObject);
             UnityEngine.EventSystems.ExecuteEvents.Execute(buttons[0].gameObject,
                 new UnityEngine.EventSystems.BaseEventData(events), UnityEngine.EventSystems.ExecuteEvents.submitHandler);
             yield return null; yield return null;
             Assert.That(Object.FindFirstObjectByType<GameManager>().State, Is.EqualTo(GameState.Running));
+        }
+        [UnityTest] public IEnumerator DeveloperCreditOpensRolesAndReturnsToMenu()
+        {
+            game.MainMenu(); yield return null; yield return null;
+            var canvas = GameObject.Find("Arabic interface");
+            var credit = GameObject.Find("Developer credit");
+            Assert.That(credit, Is.Not.Null);
+            var button = credit.transform.parent.GetComponent<Button>();
+            Assert.That(button, Is.Not.Null, "Creator credit must open the full credits.");
+            button.onClick.Invoke(); yield return null;
+            string captions = "";
+            foreach (var label in canvas.GetComponentsInChildren<TMPro.TextMeshProUGUI>()) captions += label.text + "\n";
+            foreach (string required in new[] { "Mohamad El Hussein", "Developer", "Game Creator", "Game Designer", "Programmer", "Creative Director", "Producer", "RTLTMPro" })
+                Assert.That(captions, Does.Contain(required));
+            Assert.That(captions, Does.Contain("Developer · Game Creator · Game Designer"));
+            Assert.That(captions, Does.Contain("Programmer · Creative Director & Producer"));
+            Assert.That(captions.ToLowerInvariant(), Does.Not.Contain("icy tower"));
+            var back = canvas.GetComponentsInChildren<Button>();
+            Assert.That(back.Length, Is.EqualTo(1));
+            back[0].onClick.Invoke(); yield return null;
+            Assert.That(canvas.transform.Find("Menu buttons"), Is.Not.Null);
+            Assert.That(Object.FindFirstObjectByType<GameManager>().State, Is.EqualTo(GameState.Menu));
         }
         [UnityTest] public IEnumerator CameraFallScore()
         {

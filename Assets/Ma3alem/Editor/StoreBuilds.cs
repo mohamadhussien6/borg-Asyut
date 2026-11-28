@@ -17,10 +17,10 @@ namespace Ma3alem.Editor
 
         private static void Build(BuildTarget target)
         {
-            if (EditorUserBuildSettings.activeBuildTarget != target)
-                throw new InvalidOperationException("Switch the active build profile to " + target + " first.");
             if (!BuildPipeline.IsBuildTargetSupported(BuildPipeline.GetBuildTargetGroup(target), target))
                 throw new InvalidOperationException("Install Unity build support for " + target);
+            if (EditorUserBuildSettings.activeBuildTarget != target)
+                throw new InvalidOperationException("Switch the active build profile to " + target + " first.");
             var scenes = EditorBuildSettings.scenes.Where(s => s.enabled).Select(s => s.path).ToArray();
             var expected = new[] { "Assets/Ma3alem/Scenes/MainMenu.unity", "Assets/Ma3alem/Scenes/Gameplay.unity" };
             if (!scenes.SequenceEqual(expected))
@@ -35,11 +35,11 @@ namespace Ma3alem.Editor
             if (Directory.Exists(folder) && Directory.EnumerateFileSystemEntries(folder).Any())
                 throw new IOException("Output directory must be empty: " + folder);
             Directory.CreateDirectory(folder);
-            string destination = target == BuildTarget.WebGL ? folder : Path.Combine(folder, "icy tower Asyut.exe");
+            string destination = target == BuildTarget.WebGL ? folder : Path.Combine(folder, "Borg Asyut.exe");
             var compression = PlayerSettings.WebGL.compressionFormat;
             var fallback = PlayerSettings.WebGL.decompressionFallback;
-            var width = PlayerSettings.defaultScreenWidthWeb;
-            var height = PlayerSettings.defaultScreenHeightWeb;
+            var width = PlayerSettings.defaultWebScreenWidth;
+            var height = PlayerSettings.defaultWebScreenHeight;
             try
             {
                 if (target == BuildTarget.WebGL)
@@ -47,8 +47,8 @@ namespace Ma3alem.Editor
                     // Portable static hosting: do not depend on custom gzip response headers.
                     PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Gzip;
                     PlayerSettings.WebGL.decompressionFallback = true;
-                    PlayerSettings.defaultScreenWidthWeb = 1280;
-                    PlayerSettings.defaultScreenHeightWeb = 720;
+                    PlayerSettings.defaultWebScreenWidth = 1280;
+                    PlayerSettings.defaultWebScreenHeight = 720;
                 }
                 ProjectTools.ValidateMusicExclusion();
                 // Existing VoiceBuildRefresh preprocessor refreshes voice references and checks music.
@@ -66,8 +66,8 @@ namespace Ma3alem.Editor
                 {
                     PlayerSettings.WebGL.compressionFormat = compression;
                     PlayerSettings.WebGL.decompressionFallback = fallback;
-                    PlayerSettings.defaultScreenWidthWeb = width;
-                    PlayerSettings.defaultScreenHeightWeb = height;
+                    PlayerSettings.defaultWebScreenWidth = width;
+                    PlayerSettings.defaultWebScreenHeight = height;
                     AssetDatabase.SaveAssets();
                 }
             }

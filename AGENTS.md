@@ -1,7 +1,7 @@
 # Project rules
 
 - Preserve the current Unity project, GUIDs, approved charcoal-galabeya, white-turban and beige-shawl character and concrete platform.
-- Official player-facing name: برج أسيوط (icy tower Asyut). Connected Arabic UI, Windows PC.
+- Official player-facing name: Borg Asyut — برج أسيوط. Connected Arabic UI, Windows PC.
 - Seven main gameplay scripts plus one necessary BuildingBackdrop presentation helper; no police simulation/combat/inventory/progression systems.
 - Four height zones remain within one continuous run. Facades must cover the camera at every height.
 - Supplied voice files are immutable; preserve original pitch, speed and performance.

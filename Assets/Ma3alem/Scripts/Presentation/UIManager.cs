@@ -121,6 +121,15 @@ namespace Ma3alem
 
         private void SetText(TextMeshProUGUI label, string logicalText)
         {
+            bool containsArabic = false;
+            foreach (char character in logicalText)
+                if (character >= '\u0600' && character <= '\u06FF') { containsArabic = true; break; }
+            if (!containsArabic)
+            {
+                label.isRightToLeftText = false;
+                label.text = logicalText;
+                return;
+            }
             shaped.Clear();
             RTLSupport.FixRTL(logicalText, shaped, farsi: false, fixTextTags: false, preserveNumbers: true);
             // The shaper returns visual order; TMP must not reverse it a second time.
@@ -168,7 +177,7 @@ namespace Ma3alem
             var heading = Label(title, gameTitle, new Vector2(0, 20), 48);
             heading.rectTransform.sizeDelta = new Vector2(460, 82);
             heading.color = new Color(1, 0.87f, 0.58f);
-            var subtitle = Label(title, "icy tower Asyut", new Vector2(0, -36), 22);
+            var subtitle = Label(title, GameManager.OfficialTitle, new Vector2(0, -36), 22);
             subtitle.rectTransform.sizeDelta = new Vector2(400, 34); subtitle.color = Color.white;
             var sloganPlaque = Rect("Official slogan plaque", title, new Vector2(0, -112), new Vector2(520, 54));
             var plaqueImage = sloganPlaque.gameObject.AddComponent<Image>();
@@ -194,12 +203,27 @@ namespace Ma3alem
             var record = Panel(card.transform, new Vector2(0, -172), new Vector2(310, 40));
             Label(record.transform, $"أعلى نتيجة: {game.Scores.Best}", Vector2.zero, 22);
             var credit = Panel(root, new Vector2(0, -311), new Vector2(770, 48));
-            credit.raycastTarget = false;
+            var creditsButton = credit.gameObject.AddComponent<Button>();
+            creditsButton.onClick.AddListener(() => { sound.Click(); Credits(); });
             var creator = Label(credit.transform, "تطوير وإخراج إبداعي: محمد الحسين", Vector2.zero, 20);
             creator.name = "Developer credit";
             creator.rectTransform.sizeDelta = new Vector2(730, 44);
             creator.enableAutoSizing = true; creator.fontSizeMin = 14; creator.fontSizeMax = 20;
             Select(first);
+        }
+
+        private void Credits()
+        {
+            Clear();
+            var card = Panel(root, Vector2.zero, new Vector2(850, 600));
+            Label(card.transform, "فريق العمل", new Vector2(0, 232), 36).color = Gold;
+            Label(card.transform, "محمد الحسين", new Vector2(0, 158), 38);
+            Label(card.transform, "Mohamad El Hussein", new Vector2(0, 98), 30);
+            Label(card.transform, "Developer · Game Creator · Game Designer", new Vector2(0, 32), 22);
+            Label(card.transform, "Programmer · Creative Director & Producer", new Vector2(0, -12), 22);
+            Label(card.transform, "Unity · RTLTMPro · Lemonada · Noto", new Vector2(0, -88), 20);
+            Label(card.transform, "التراخيص وحقوق الأصول مرفقة مع اللعبة", new Vector2(0, -132), 20);
+            Select(Button(card.transform, "رجوع", -226, () => Show(game.State)));
         }
 
         private void Hud()

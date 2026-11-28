@@ -79,7 +79,8 @@ for name in ('MainMenu', 'Gameplay'):
 
 for path in ROOT.glob('*.md'):
     for target in re.findall(r'\]\(([^)]+)\)', path.read_text(encoding='utf8')):
-        if '://' not in target and not (path.parent / target.split('#')[0]).exists():
+        from urllib.parse import unquote
+        if '://' not in target and not (path.parent / unquote(target.split('#')[0])).exists():
             issues.append('Broken document link in ' + path.name + ': ' + target)
 
 voice_path = assets / 'Audio/VoiceLines'

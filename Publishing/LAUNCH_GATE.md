@@ -2,13 +2,13 @@
 
 ## Rights and identity
 - [ ] Creator: محمد الحسين / Mohamad El Hussein. Verify contributor permissions and required credits, soundtrack rights, and store terms; keep evidence privately.
-- [ ] Store title: Borg Asyut — برج أسيوط. Current in-game name/approved graphics contain Icy Tower wording. Check name/branding clearance or approve new independent branding before release.
-- [ ] Remove old academic PDF from GitHub Release assets. Keep third-party license notices and do not rewrite history.
-- [ ] Review privacy/Unity services and actual network traffic. Current submitAnalytics setting is enabled; no claim of zero data collection is justified.
+- [ ] Store title: Borg Asyut — برج أسيوط. Runtime, executable, header and new submission artwork use Borg Asyut; historical captures remain clearly identified.
+- [x] Removed the academic PDF attachment after a checksum-verified private backup; previous playable archive and third-party notices retained.
+- [ ] Review privacy/Unity services and actual network traffic. submitAnalytics and configured Unity services are disabled; actual network traffic still needs verification.
 - [ ] Answer store rating questions accurately (fictional theft/smuggling; hookah imagery); disclose generated content where asked.
 
 ## Build and test
-- [ ] Clean LFS checkout, Unity 6000.3.2f1, no missing references; run Edit Mode and Play Mode tests again. Historical 23 + 40 passed, 13 skipped are not new results.
+- [ ] Clean LFS checkout, patched Unity 6000.3 LTS (at least 6000.3.27f2 for reviewed advisories), no missing references; run Edit Mode and Play Mode tests again. Historical 23 + 40 passed, 13 skipped are not new results.
 - [ ] Windows build starts on clean PC without Unity, no verification mode, local-only music, debug package or missing DLL.
 - [ ] Main menu, Arabic creator label, keyboard, help, sound, pause/resume, restart, four stages, combo, Game Over and score after restart. Check 16:9 and other screen sizes, audio balance, performance, antivirus and unsigned exe behavior.
 - [ ] Verify company-name change and decide whether to migrate local saved scores. Do not promise old scores carry over.
